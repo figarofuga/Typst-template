@@ -1,10 +1,13 @@
-= Introductio
-In this report, we will explore the
-various factors that influence fluid
-dynamics in glaciers and how they
-contribute to the formation and
-behaviour of these natural structures.
+= Introduction
 
 これはどうだろう？
+*いけた！*
 
-いけた！
+- 例えば、結核の事
+- 例えば、NTMの事
+
+== いろんな使い方
+
+1. いろんなことがある。
+2. そういうものだ。
+
