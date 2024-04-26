@@ -11,3 +11,7 @@
 1. いろんなことがある。
 2. そういうものだ。
 
+例えばreferenceはこうやる。@Ikejima2009-zk
+
+
+#bibliography("reference.bib")
