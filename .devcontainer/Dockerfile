@@ -1,20 +1,25 @@
 # 基本イメージとしてRust公式イメージを使用
-FROM rust:latest
+FROM ghcr.io/typst/typst:latest
 
 # 必要なパッケージのインストール
-RUN apt-get update && apt-get install -y \
-    fonts-ipafont-gothic \
-    fonts-ipafont-mincho \
+RUN apk --no-cache add \
+    musl-locales \
+    musl-locales-lang \
     curl \
     unzip \
-    fonts-noto-cjk \
-    locales \
-    && rm -rf /var/lib/apt/lists/*
+    msttcorefonts-installer \
+    fontconfig && \
+    update-ms-fonts && \
+    fc-cache -f
 
-# ロケールを日本語に設定
-RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen \
-    && locale-gen ja_JP.UTF-8 \
-    && update-locale LANG=ja_JP.UTF-8
+RUN apk update \
+    && apk add --no-cache curl fontconfig \
+    && curl -O https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip \
+    && mkdir -p /usr/share/fonts/NotoSansCJKjp \
+    && unzip NotoSansCJKjp-hinted.zip -d /usr/share/fonts/NotoSansCJKjp/ \
+    && rm NotoSansCJKjp-hinted.zip \
+    && fc-cache -fv \
+  
 
 # 環境変数 LANG を設定
 ENV LANG ja_JP.UTF-8
@@ -28,8 +33,6 @@ ENV LANG ja_JP.UTF-8
 #     && rm HaranoAjiGothic.zip HaranoAjiMincho.zip \
 #     && fc-cache -fv
 
-# Typstをインストール
-RUN cargo install --git https://github.com/typst/typst.git
 
 # 環境変数の設定
 # ENV TYPST_FONT_PATHS=/usr/share/fonts/truetype/haranoaji
