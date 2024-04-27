@@ -2,7 +2,8 @@
 FROM ghcr.io/typst/typst:latest
 
 # 必要なパッケージのインストール
-RUN apk --no-cache add \
+RUN apk update && \
+    apk --no-cache add git \
     musl-locales \
     musl-locales-lang \
     curl \
@@ -12,8 +13,7 @@ RUN apk --no-cache add \
     update-ms-fonts && \
     fc-cache -f
 
-RUN apk update \
-    && apk add --no-cache curl fontconfig \
+RUN apk add --no-cache curl fontconfig \
     && curl -O https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip \
     && mkdir -p /usr/share/fonts/NotoSansCJKjp \
     && unzip NotoSansCJKjp-hinted.zip -d /usr/share/fonts/NotoSansCJKjp/ \
@@ -33,6 +33,8 @@ ENV LANG ja_JP.UTF-8
 #     && rm HaranoAjiGothic.zip HaranoAjiMincho.zip \
 #     && fc-cache -fv
 
+RUN git config --global user.email "figarofuga@gmail.com" && \
+    git config --global user.name "figarofuga"
 
 # 環境変数の設定
 # ENV TYPST_FONT_PATHS=/usr/share/fonts/truetype/haranoaji
