@@ -19,7 +19,10 @@
 #polylux-slide[
   == First slide
 
-  Some static text on this slide.
+  Some static text on this slide.#footnote[広辞苑より] #h(1em)
+
+  それはそれでよい#footnote[Harrison内科学より] #h(1em)
+
 ]
 
 #polylux-slide[
