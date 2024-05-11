@@ -14,7 +14,6 @@ Rapid progression dementiaの定義は決まっていないが、大体2年以�
 1. いろんなことがある。
 2. そういうものだ。
 
-例えばreferenceはこうやる。@Ikejima2009-zk
+例えばreferenceはこうやる。
 
 
-#bibliography("reference.bib")
