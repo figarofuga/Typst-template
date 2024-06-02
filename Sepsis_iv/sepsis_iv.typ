@@ -40,10 +40,14 @@
 #polylux-slide[
   == EGDT時代の終焉
 
-  - EGDTの治療は時代を画したが、輸液量が非常に多かった
+#figure(
+  image("figures/egdt_metaanalysis.jpeg", height: 50%),
+  caption: [
+    Individual-level meta analysis of EGDT RCT.
+  ]
+)
   - その後、通常の治療と比較した3つのRCTがあり通常治療とEGDTで死亡率に差を認めなかった
   - 更に、大量輸液の害が指摘されるようになっていった
-  
 ]
 
 #polylux-slide[
