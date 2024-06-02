@@ -3,7 +3,7 @@
 
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
-#set text(size: 25pt)
+#set text(size: 20pt)
 
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
@@ -41,13 +41,10 @@
   == EGDT時代の終焉
 
 #figure(
-  image("figures/egdt_metaanalysis.jpeg", height: 50%),
-  caption: [
-    Individual-level meta analysis of EGDT RCT.
-  ]
+  image("figures/egdt_metaanalysis.jpeg", height: 50%)
 )
-  - その後、通常の治療と比較した3つのRCTがあり通常治療とEGDTで死亡率に差を認めなかった
-  - 更に、大量輸液の害が指摘されるようになっていった
+  - その後、通常の治療と比較した3つのRCTがあり通常治療とEGDTで死亡率に差を認めなかった#footnote[N Engl J Med 2017;376:2223-2234] #h(0.5em)
+  - さらに、輸液過剰の害が指摘されるようになった
 ]
 
 #polylux-slide[
