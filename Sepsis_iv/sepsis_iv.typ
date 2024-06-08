@@ -3,14 +3,14 @@
 
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
-#set text(size: 20pt)
+#set text(font: "Noto Sans CJK JP", size: 20pt)
 
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
   #align(horizon + center)[
     = 敗血症における輸液療法今昔
 
-    新美　望
+    新美 望
 
     2024/5/24
   ]
@@ -19,9 +19,10 @@
 #polylux-slide[
   == 背景
   
-  - 敗血症は進行すると血圧が下がり敗血症性ショックとなり、非常に死亡率が高い。#footnote[Harrison内科学より] #h(1em)
+  - 敗血症は進行すると血圧が下がり敗血症性ショックとなり、非常に死亡率が高い。#footnote[Harrison内科学より] #h(0.5em)
 
-  - RiverらのEarly goal directed therapyにより敗血症の治療は格段に改善した。#footnote[広辞苑より] #h(1em)
+  - RiverらのEarly goal directed therapyにより敗血症の治療は格段に改善した。#footnote[N Engl J Med. 2001;345(19):1368-1377.] #h(0.5em)
+    - 通常治療群
 
 ]
 
@@ -31,7 +32,7 @@
   - この組織灌流は平均血圧で規定されていた
   
   #align(horizon + center)[
-   このEGDTにより、死亡率が**%も改善した
+   このEGDTにより、死亡率が #text(size: 28pt)[16%] (46.5% vs. 30.5%)も改善した
   ] 
   
   図
@@ -53,7 +54,8 @@
   - 急性膵炎などで指摘されているが、大量輸液により
   + 人工呼吸器装着期間
   + ICU入室期間に加えて
-  + 死亡率　#align(horizon + center)[
+  + 死亡率 
+  #align(horizon + center)[
     まで上昇することが判明した。
   ] 
   
@@ -83,22 +85,30 @@
 
 #polylux-slide[
   == CLASSIC trial
-
+#figure(
+  image("figures/classic_km.png", height: 50%)
+) 
   - P: 
   - I: 
   - C: 
   - O: 
-  図 
+  #align(right)[
+   #text(size: 12pt)[N Engl J Med. 2022;386(26):2459-2470.]
+  ] 
 ]
 
 #polylux-slide[
   == CLOVERS trial
-
+#figure(
+  image("figures/clovers_km.png", height: 50%)
+) 
   - P: 
   - I: 
   - C: 
   - O: 
-  図 
+  #align(right)[
+   #text(size: 12pt)[N Engl J Med. 2023;388(6):499-510.]
+  ] 
 ]
 
 #polylux-slide[
