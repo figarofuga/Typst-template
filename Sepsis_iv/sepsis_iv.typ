@@ -19,10 +19,9 @@
 #polylux-slide[
   == 背景
   
-  - 敗血症は進行すると血圧が下がり敗血症性ショックとなり、非常に死亡率が高い。#footnote[Harrison内科学より] #h(0.5em)
+  - 敗血症は進行すると血圧が下がり敗血症性ショックとなり、非常に死亡率が高い。#footnote[Harrison内科学より] #h(0.1em)
 
-  - RiverらのEarly goal directed therapyにより敗血症の治療は格段に改善した。#footnote[N Engl J Med. 2001;345(19):1368-1377.] #h(0.5em)
-    - 通常治療群
+  - RiverらのEarly goal directed therapyにより敗血症の治療は格段に改善した。#footnote[N Engl J Med. 2001;345(19):1368-1377.] #h(0.1em)
 
 ]
 
@@ -30,9 +29,8 @@
   == EGDTについて
   - EGDTは複数の介入(バンドル)で構成されているが、そのメインのものに*大量輸液による早期の組織への灌流の改善*が挙げられる
   - この組織灌流は平均血圧で規定されていた
-  
   #align(horizon + center)[
-   このEGDTにより、死亡率が #text(size: 28pt)[16%] (46.5% vs. 30.5%)も改善した
+   このEGDTにより、死亡率が #text(size: 28pt)[*16%*] (46.5% vs. 30.5%)も改善した
   ] 
   
   図
@@ -51,12 +49,13 @@
 #polylux-slide[
   == 大量輸液の害
 
-  - 急性膵炎などで指摘されているが、大量輸液により
+  - 大量輸液(初日に5L/day以上)により
   + 人工呼吸器装着期間
   + ICU入室期間に加えて
   + 死亡率 
-  #align(horizon + center)[
-    まで上昇することが判明した。
+  #align(center)[
+    まで上昇することが判明した。#footnote[Intensive Care Medicine 43 (5): 625–32.
+] #h(0.1em)
   ] 
   
 ]
