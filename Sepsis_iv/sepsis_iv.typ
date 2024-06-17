@@ -4,6 +4,7 @@
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
 #set text(font: "Noto Sans CJK JP", size: 20pt)
+#set footnote.entry(clearance: 0.1em, gap: 0.2em)
 
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
