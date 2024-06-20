@@ -34,7 +34,7 @@
    このEGDTにより、死亡率が #text(size: 28pt)[*16%*] (46.5% vs. 30.5%)も改善した
   ] 
   
-  図
+  
 ]
 
 #polylux-slide[
