@@ -100,12 +100,12 @@
 #polylux-slide[
   == CLOVERS trial
 #figure(
-  image("figures/clovers_km.png", height: 50%)
+  image("figures/clovers_km.png", height: 45%)
 ) 
-  - P: 
-  - I: 
-  - C: 
-  - O: 
+  - P: 1-3Lの輸液でも改善しないSepsisによる低灌流患者 #footnote[1000mL輸液後のSBP< 100mmHg] #h(0.1em) (n = 1,563)
+  - I: 輸液制限療法 (24時間で平均1267mL, 95%CI: 555-2279mL)
+  - C: 輸液自由療法 (24時間で平均3400mL, 95%CI: 2500-4495mL)
+  - O: 90日目死亡は差なし(輸液制限群 14% vs. 輸液自由群 14.9%)
   #align(right)[
    #text(size: 12pt)[N Engl J Med. 2023;388(6):499-510.]
   ] 
