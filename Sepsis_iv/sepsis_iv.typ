@@ -74,10 +74,9 @@
 #polylux-slide[
   == 輸液はどれくらいいれる？(どれくらい絞っても大丈夫？)
 
-  - 現在、30mL/kgの初期輸液が推奨されている
-  - しかし、この値は明らかなエビデンスがあるわけではない
-    - 上述のARISEなどの研究のデータと、観察研究から導かれたもの
-  - これをちゃんと評価したRCTは2つある
+  - 現在、初期輸液以降のあとはどこまで入れるのかわかっていない
+  - 輸液反応性を見て、必要に応じて入れるという曖昧な感じ
+  - 初期輸液以降の輸液量をちゃんと評価したRCTは2つある
     + CLOVERS trial
     + CLASSIC trial
   
@@ -86,7 +85,7 @@
 #polylux-slide[
   == CLASSIC trial
 #figure(
-  image("figures/classic_km.png", height: 50%)
+  image("figures/classic_km.png", height: 40%)
 ) 
   - P: 24時間以内に1L以上の補液下でSeptic shockが持続する患者(n = 1,554)
   - I: 輸液制限群 (ICUでのIn balance 1,645mL)#footnote[Protocl違反は 20%であった事は注目に値する] #h(0.1em) 
@@ -132,7 +131,7 @@
   #align(right)[
    #text(size: 12pt)[J Intensive Care Med. 2021;36(9):989-1012.]
   ] 
-  - 一度落ち着いたあとは絞り目に行くのが良いかもしれない
+  - 1回はガツンと入れて、その後は絞り目に行くのが良いかもしれない
 
 ]
 
@@ -142,17 +141,15 @@
   - 輸液はMAP >65 mmHgとして、末梢循環を改善させる為のもの
   + 早期の昇圧剤使用
   + 目標のMAPの値を下げる
-  + MAP以外の指標を用いる
+    - MAP以外の指標を用いる
   
 ]
 
 #polylux-slide[
   == 早期の昇圧剤使用
   
-  - 輸液はMAP >65 mmHgとして、末梢循環を改善させる為のもの
-  + 末梢循環を改善させるその他の治療を早期に用いる
-  + 目標のMAPの値を下げる
-  + MAP以外の指標を用いる
+  - 輸液が入りきる前のNAD使用
+  + Censor trial
   
 ]
 
@@ -160,10 +157,13 @@
 #polylux-slide[
   == 目標のMAPの値を下げる
   
-  - 輸液はMAP >65 mmHgとして、末梢循環を改善させる為のもの
-  + 末梢循環を改善させるその他の治療を早期に用いる
-  + 目標のMAPの値を下げる
-  + MAP以外の指標を用いる
+  - 目標MAPについては理論的背景に乏しい
+  - もともとの血圧150/100の人と80/40の人で同じMAPで良い？
+  - 臓器循環を重視する！
+    - Lactateの値
+    - ELGT (Early lactate guided therapy)
+      LactateのClearance速度が・・・・・・
+
   
 ]
 
@@ -172,7 +172,17 @@
   == MAP以外の指標を用いる
   
   - Capillary Refilling Time
+  - ANDROMEDA-Shock trial
+  
 
   
 ]
 
+#polylux-slide[
+  == Take home message
+  
+  - Sepsisの輸液はまずはガツンと、その後は絞っても良いかも
+  - 早期のNAD併用を考慮
+  - 患者背景を考えて、MAPだけに頼らない！
+  
+]
