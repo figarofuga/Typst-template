@@ -127,10 +127,7 @@
   - 上記RCTは基本的には1-3L(30 mL/kg程度)の外液を入れたあとの介入
     - Optimization and stablization phaseと称される#footnote[JAMA. 2023;329(22):1967-1980.] #h(0.1em) 
   - 基本はまずは30 mL/kgの初期輸液は勇気をもって行う
-    - 心不全背景でもショックのときにはやったほうが良いという観察研究が多い
-  #align(right)[
-   #text(size: 12pt)[J Intensive Care Med. 2021;36(9):989-1012.]
-  ] 
+    - 心不全背景でもショックのときには大量初期輸液が良いという観察研究が多い#footnote[J Intensive Care Med. 2021;36(9):989-1012.] #h(0.1em) 
   - 1回はガツンと入れて、その後は絞り目に行くのが良いかもしれない
 
 ]
@@ -170,24 +167,27 @@
 ]
 
 #polylux-slide[
-  == 65T trial
+  == 65 trial
 #figure(
-  image("figures/clovers_km.png", height: 45%)
+  image("figures/sixty_five_trial.png", height: 45%)
 ) 
-  - P: 1-3Lの輸液でも改善しないSepsisによる低灌流患者 (n = 1,563)
-  - I: 輸液制限療法 (24時間で平均1267mL, 95%CI: 555-2279mL)
-  - C: 輸液自由療法 (24時間で平均3400mL, 95%CI: 2500-4495mL)
-  - O: 90日目死亡は差なし(輸液制限群 14% vs. 輸液自由群 14.9%)
+  - P: ICUに入った65歳以上の患者で点滴および昇圧剤使用初期 (n = 2,600)
+  - I: 低血圧許容群 (MAP 60-65 mmHg, n = 1291)
+  - C: 通常治療群 (MAP >65 mmHg, n = 1,307)
+  - O: 90日目死亡は差なし(低血圧許容群 41.0% vs. 通常治療群 43.8%)
   #align(right)[
    #text(size: 12pt)[N Engl J Med. 2023;388(6):499-510.]
-  ] 
+  ]
+  // 結果として、差はあるものの殆どの低血圧許容群はMAP >65 mmHgに達していた
+  // median MAP 66.7 vs. 72.6, MedianのMAP< 65の時間は12 hr vs. 6hr
 ]
+
 
 #polylux-slide[
   == MAP以外の指標を用いる
   - MAPは臓器灌流を改善させるのが目的
     - 臓器灌流を直接評価した方が良いかも知れない
-  - ショックの時の循環評価の代表的な指標:
+  - ショックの時の循環評価の代表的な指標:#footnote[N Engl J Med 2013;369:1726-1734] #h(0.1em) 
     + 腎臓 → 尿量
     + 脳 → 意識
     + 皮膚 → #text(fill: red, weight: "bold")[Capillary Refilling Time]
