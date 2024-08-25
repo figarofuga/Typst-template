@@ -139,50 +139,81 @@
   == 輸液の量を絞った後は？
   
   - 輸液はMAP >65 mmHgとして、末梢循環を改善させる為のもの
+  - 輸液を絞ると当然MAPの目標の達成は難しくなる。その時はどうする？
   + 早期の昇圧剤使用
   + 目標のMAPの値を下げる
+    - シンプルにMAPの目標値を下げる
     - MAP以外の指標を用いる
   
 ]
 
 #polylux-slide[
-  == 早期の昇圧剤使用
-  
-  - 輸液が入りきる前のNAD使用
-  + Censor trial
-  
+  == CENSOR trial
+#figure(
+  image("figures/clovers_km.png", height: 45%)
+) 
+  - P: 1-3Lの輸液でも改善しないSepsisによる低灌流患者 (n = 1,563)
+  - I: 輸液制限療法 (24時間で平均1267mL, 95%CI: 555-2279mL)
+  - C: 輸液自由療法 (24時間で平均3400mL, 95%CI: 2500-4495mL)
+  - O: 90日目死亡は差なし(輸液制限群 14% vs. 輸液自由群 14.9%)
+  #align(right)[
+   #text(size: 12pt)[N Engl J Med. 2023;388(6):499-510.]
+  ] 
 ]
-
 
 #polylux-slide[
-  == 目標のMAPの値を下げる
+  == シンプルに目標のMAPの値を下げる
   
-  - 目標MAPについては理論的背景に乏しい
-  - もともとの血圧150/100の人と80/40の人で同じMAPで良い？
-  - 臓器循環を重視する！
-    - Lactateの値
-    - ELGT (Early lactate guided therapy)
-      LactateのClearance速度が・・・・・・
-
-  
+  - 目標MAP >= 65 mmHgは少数のICU患者のLactateの値などで決められておりEvidenceに乏しい
+  - SEPSISPAM trialで少なくともこれ以上高くなくても良いとされた(65-70 mmHg vs. 75-80 mmHg) 
+  - 高齢者(65歳以上)では、目標MAPを下げて NADを減らした方が良いかもしれない
 ]
 
+#polylux-slide[
+  == 65T trial
+#figure(
+  image("figures/clovers_km.png", height: 45%)
+) 
+  - P: 1-3Lの輸液でも改善しないSepsisによる低灌流患者 (n = 1,563)
+  - I: 輸液制限療法 (24時間で平均1267mL, 95%CI: 555-2279mL)
+  - C: 輸液自由療法 (24時間で平均3400mL, 95%CI: 2500-4495mL)
+  - O: 90日目死亡は差なし(輸液制限群 14% vs. 輸液自由群 14.9%)
+  #align(right)[
+   #text(size: 12pt)[N Engl J Med. 2023;388(6):499-510.]
+  ] 
+]
 
 #polylux-slide[
   == MAP以外の指標を用いる
-  
-  - Capillary Refilling Time
-  - ANDROMEDA-Shock trial
-  
+  - MAPは臓器灌流を改善させるのが目的
+    - 臓器灌流を直接評価した方が良いかも知れない
+  - ショックの時の循環評価の代表的な指標:
+    + 腎臓 → 尿量
+    + 脳 → 意識
+    + 皮膚 → #text(fill: red, weight: "bold")[Capillary Refilling Time]
+    + 全身臓器 → 乳酸値
+  - MAPを65で決めつけず、上記を指標に参考に調整しても良いかもしれない
+]
 
-  
+#polylux-slide[
+  == ANDROMEDA-SHOCK trial
+#figure(
+  image("figures/clovers_km.png", height: 45%)
+) 
+  - P: 1-3Lの輸液でも改善しないSepsisによる低灌流患者 (n = 1,563)
+  - I: 輸液制限療法 (24時間で平均1267mL, 95%CI: 555-2279mL)
+  - C: 輸液自由療法 (24時間で平均3400mL, 95%CI: 2500-4495mL)
+  - O: 90日目死亡は差なし(輸液制限群 14% vs. 輸液自由群 14.9%)
+  #align(right)[
+   #text(size: 12pt)[N Engl J Med. 2023;388(6):499-510.]
+  ] 
 ]
 
 #polylux-slide[
   == Take home message
   
-  - Sepsisの輸液はまずはガツンと、その後は絞っても良いかも
+  - Sepsisの輸液はまずはガツンと、その後は絞る
   - 早期のNAD併用を考慮
-  - 患者背景を考えて、MAPだけに頼らない！
+  - 患者背景や他の指標を考えて、MAPの目標値を変更しても良いかも！
   
 ]
