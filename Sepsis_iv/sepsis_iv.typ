@@ -18,13 +18,31 @@
 ]
 
 #polylux-slide[
-  == 背景
-  
-  - 敗血症性ショックは非常に死亡率が高い。#footnote[Harrison内科学より] #h(0.1em)
+    == 9月になりましたね
+  9月と言えば・・・・・・
 
-  - RiverらのEarly goal directed therapyにより敗血症の治療は格段に改善した。#footnote[N Engl J Med. 2001;345(19):1368-1377.] #h(0.1em)
+#side-by-side[
+    - 月見だ！
+  
+][
+  - シルバーウィークだ！   
+  
+][
+  - 敗血症だ！！#footnote[9月13日は世界敗血症デー] #h(0.5em)
+]
+]
+
+#polylux-slide[
+  == 9月になりましたね
+  9月と言えば・・・・・・
+  - 月見だ！
+  - シルバーウィークだ！   
+  - 敗血症だ！！#footnote[9月13日は世界敗血症デー] #h(0.5em)
 
 ]
+
+
+
 
 #polylux-slide[
   == EGDTについて
