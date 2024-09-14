@@ -3,7 +3,7 @@
 
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
-#set text(font: "IPAexMincho", size: 20pt)
+#set text(font: "IPAPGothic", size: 20pt)
 #set footnote.entry(clearance: 0.1em, gap: 0.2em)
 #show heading:set align(start + top)
 #set align(horizon)
