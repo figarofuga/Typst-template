@@ -14,12 +14,12 @@ RUN apk update && \
     fc-cache -f
 
 RUN apk add --no-cache curl fontconfig \
-    && curl -O https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip \
-    && mkdir -p /usr/share/fonts/NotoSansCJKjp \
-    && unzip NotoSansCJKjp-hinted.zip -d /usr/share/fonts/NotoSansCJKjp/ \
-    && rm NotoSansCJKjp-hinted.zip \
+    && curl -O https://moji.or.jp/wp-content/ipafont/IPAexfont/IPAexfont00301.zip \
+    && mkdir -p /usr/share/fonts/ipa \
+    && unzip -o -d /usr/share/fonts/ipa/ IPAexfont00301.zip "*.ttf" \
+    && rm IPAexfont00301.zip \
     && fc-cache -fv \
-  
+
 
 # 環境変数 LANG を設定
 ENV LANG ja_JP.UTF-8
