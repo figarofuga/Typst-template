@@ -10,6 +10,7 @@ RUN apk update && \
     unzip \
     msttcorefonts-installer \
     font-noto \
+    font-noto-cjk \
     font-ipa \
     fontconfig && \
     update-ms-fonts && \

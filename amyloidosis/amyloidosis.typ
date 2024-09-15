@@ -3,7 +3,7 @@
 
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
-#set text(font: "IPAexMincho", size: 20pt)
+#set text(font: "Noto Serif CJK JP", size: 20pt)
 #set footnote.entry(clearance: 0.1em, gap: 0.2em)
 #show heading:set align(start + top)
 #set align(horizon)
@@ -11,11 +11,11 @@
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
   #align(horizon + center)[
-    = 敗血症における輸液療法今昔
+    = Systemic amyloidosis
 
     新美 望
 
-    2024/5/24
+    2024/9/15
   ]
 ]
 
