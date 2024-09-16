@@ -64,12 +64,12 @@
   [ATTR-wt], [トランスサイレチン],[後天性], [心臓、肺、腱], [全身性],
   [ATTR-v], [トランスサイレチン], [遺伝性], [末梢/自律神経、心臓、目、髄膜], [全身性],
 )
-　 #align(right)[
+  #align(right)[
    #text(size: 12pt)[DynaMed. Amyloidosis. EBSCO Information Services. Accessed September 16th, 2024]
   ] 
 
   - 全部で30種類以上の前駆物質が判明している
-　- 上記の4種類でだいたい全部のうち80%くらいは占めている
+  - 上記の4種類でだいたい全部のうち80%くらいは占めている
 
 ]
 
@@ -88,7 +88,7 @@
 
   - 症状は非特異的な事が多い
   + 倦怠感、低栄養など
-　- どちらかというと、臓器障害を見て疑った後にRed flagを探す
+  - どちらかというと、臓器障害を見て疑った後にRed flagを探す
   
 ]
 
@@ -97,10 +97,10 @@
 
   - 心臓
   + HFpEF
-　- 神経
-　+ 両側手根管症候群
-　- 原因不明のDistal systemic polyneuropathy
-　- DM以外のNephrosis
+  - 神経
+  + 両側手根管症候群
+  - 原因不明のDistal systemic polyneuropathy
+  - DM以外のNephrosis
   - 正直多いのは、心臓と腎臓だと思う
 ]
 
@@ -113,10 +113,10 @@
    #text(size: 12pt)[ESC Heart Fail. 2023;10(3):1896-1906.]
 ] 
   - とはいえ、やはり現実的ではない
-　- 以下の特徴があったら疑うくらいでよいか
-　+ 強い心室の壁肥厚、特に後壁 > 15mm
+  - 以下の特徴があったら疑うくらいでよいか
+  + 強い心室の壁肥厚、特に後壁 > 15mm
   + 壁肥厚があるにもかかわらず、心電図が低電位 or QS pattern(偽梗塞)
-　+ 病歴で、Polyneuropathy、手根管症候群、Nephrosisの合併
+  + 病歴で、Polyneuropathy、手根管症候群、Nephrosisの合併
   
 ]
 
@@ -166,12 +166,12 @@
   [ATTR-wt], [トランスサイレチン],[後天性], [心臓、肺、腱], [全身性],
   [ATTR-v], [トランスサイレチン], [遺伝性], [末梢/自律神経、心臓、目、髄膜], [全身性],
 )
-　 #align(right)[
+   #align(right)[
    #text(size: 12pt)[DynaMed. Amyloidosis. EBSCO Information Services. Accessed September 16th, 2024]
   ] 
 
   - 全部で30種類以上の前駆物質が判明している
-　- 上記の4種類でだいたい全部のうち80%くらいは占めている
+  - 上記の4種類でだいたい全部のうち80%くらいは占めている
 
 ]
 
