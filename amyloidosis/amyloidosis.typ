@@ -11,7 +11,7 @@
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
   #align(horizon + center)[
-    = Systemic amyloidosis
+    = Systemic amyloidosis？
 
     新美 望
 
@@ -20,32 +20,33 @@
 ]
 
 #polylux-slide[
-    == 9月になりましたね
-  9月と言えば・・・・・・
-#align(horizon)[
-#side-by-side[
-    #set align(horizon + center) 
-    = 秋だ！  
-][
-  #set align(horizon + center) 
-    = 月見だ！  
-  
-][
-  #set align(horizon + center) 
-    = 敗血症だ！！#footnote[9月13日は世界敗血症デー] #h(0.5em)  
-]
-]
+    == Amyloidとは？
+ - 1854年にVirchowが初めて提唱した、ミスフォールド前駆体タンパク質に由来する線維状物質
+  #align(right)[
+   #text(size: 12pt)[Amyloid. 2020;27(4):217-222.]
+   #text(size: 12pt)[DynaMed. Amyloidosis. EBSCO Information Services. Accessed September 16th, 2024]
+  ] 
+ - 全身の臓器に沈着し、多くの臓器障害を起こす
 ]
 
 #polylux-slide[
-  == という事で
-  
-  #align(horizon + center)[
-    #text(size: 24pt, weight: "bold")[- 今日は敗血症における輸液療法について考えてみたい
-]
-  ]
+  == Amyloidosisの分類
+
+ - 遺伝性 vs. 後天性 / 全身性 vs. 局所
+ - Amyloidの種類によっても分類可能
+   + AA, AL, ATTR etcetc
+ - Amyloidの種類での分類が最もわかりやすい
+
 ]
 
+#polylux-slide[
+  == どうして？
+
+ - 全身性/局所性も遺伝性/後天性もAmyloidの種類である程度わかる
+ - 障害される臓器PatternもAmyloidの種類でわかる事が多い
+ - 何よりも、*治療法の有無*が決定される(後述)
+
+]
 
 
 
