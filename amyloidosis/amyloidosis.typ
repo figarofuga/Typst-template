@@ -10,8 +10,10 @@
 
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
+
+  = Systemic amyloidosis？
   #align(horizon + center)[
-    = Systemic amyloidosis？
+    
 
     新美 望
 
@@ -23,12 +25,14 @@
     == Amyloidとは？
  - 1854年にVirchowが初めて提唱した、ミスフォールド前駆体タンパク質に由来する線維状物質
   #align(right)[
-   #text(size: 12pt)[Amyloid. 2020;27(4):217-222.]
-   #text(size: 12pt)[DynaMed. Amyloidosis. EBSCO Information Services. Accessed September 16th, 2024]
+   #text(size: 12pt)[
+    Amyloid. 2020;27(4):217-222.
+   
+   DynaMed. Amyloidosis. EBSCO Information Services. Accessed September 16th, 2024]
   ] 
  - 全身の臓器に沈着し、多くの臓器障害を起こす
  - 有病率はだいたい100万人あたり14人と推定されている
-   - CMLとかと同じ
+   - CMLとかと同じくらいの頻度
 
 ]
 
