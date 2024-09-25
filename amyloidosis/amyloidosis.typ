@@ -60,21 +60,25 @@
 #polylux-slide[
   == Amyloidの種類と特徴
 
+  #align(center)[
+   #text(size: 24pt, fill: red)[*最重要スライド！！*]
+  ] 
+#set text(size: 16pt)
 #table(
   columns: 5,
   [*種類*], [*前駆物質*], [*遺伝性/後天性*], [*障害臓器*], [*全身性/局所性*],
   [AL], [免疫グロブリン軽鎖],[両方], [全臓器、中枢神経は稀], [両方],
   [AA], [血清アミロイドA],[後天性], [中枢神経以外全て、通常腎臓], [全身性],
   [ATTR-wt], [トランスサイレチン],[後天性], [心臓、肺、腱], [全身性],
-  [ATTR-v], [トランスサイレチン], [遺伝性], [末梢/自律神経、心臓、目、髄膜], [全身性],
+  [ATTR-v], [トランスサイレチン], [遺伝性], [末梢/自律神経、心臓、目、髄膜], [全身性]
 )
   #align(right)[
    #text(size: 12pt)[DynaMed. Amyloidosis. EBSCO Information Services. Accessed September 16th, 2024]
   ] 
-
+#set text(font: "Noto Serif CJK JP", size: 20pt)
   - 全部で30種類以上の前駆物質が判明している
   - 上記の4種類でだいたい全部のうち80%くらいは占めている
-
+  
 ]
 
 #polylux-slide[
@@ -91,22 +95,82 @@
   == どういう時に疑う？
 
   - 症状は非特異的な事が多い
-  + 倦怠感、低栄養など
+    - 倦怠感、低栄養など
   - どちらかというと、臓器障害を見て疑った後にRed flagを探す
+  - 疾患毎のシナリオをなんとなく覚えておくと良い
   
 ]
 
 #polylux-slide[
-  == Amyloidosisを疑う臓器障害
+  == AA amyloidosisの特徴
 
-  - 心臓
-  + HFpEF
-  - 神経
-  + 両側手根管症候群
-  - 原因不明のDistal systemic polyneuropathy
-  - DM以外のNephrosis
-  - 正直多いのは、心臓と腎臓だと思う
+  - AA amyloidosis: 年齢の中央値は50-60
+    + 腎臓: 蛋白尿陽性
+    + 肝腫大: 10%程度 
+    + その他: 倦怠感、体重減少、脾腫、下痢、甲状腺腫など
+    + 心疾患は稀
+  
 ]
+
+#polylux-slide[
+  == AA amyloidosisの疾患シナリオ
+
+  - 慢性炎症性疾患の背景がある患者の高度蛋白尿、全身浮腫
+    - TB, RA, IBD, SLE, FMF, Sarcoidosis, HIVなど
+  - 蛋白尿が95%でNephrosis rangeは50%にもなる
+  - 心不全や神経障害がある時は別の疾患を疑う
+  #align(right)[
+   #text(size: 12pt)[Rheum Dis Clin North Am. 2018;44(4):585-603.]
+  ] 
+]
+
+#polylux-slide[
+  == AL amyloidosisの特徴
+
+  - AL amyloidosis: 診断時の年齢は50-70歳が殆ど
+    + 巨舌: 10-17%
+    + 眼窩周囲の紫斑: 15%
+    + 心疾患: 60-75%
+    + 腎疾患: 50-70%
+    + 神経: 22%
+    + 肝臓: 20%
+    + 腸管: 10-17%
+  #align(right)[
+   #text(size: 12pt)[DynaMed. Amyloidosis. EBSCO Information Services. Accessed September 16th, 2024]
+  ] 
+]
+
+#polylux-slide[
+  == AL amyloidosisの疾患シナリオ①
+
+#side-by-side[
+  - 原因不明の心不全入院: HFpEFでTTEをした時の著名な心室壁肥厚
+  - 腎機能低下: 蛋白尿
+  - 神経障害: 両手足のしびれ、両手の手根管症候群、起立性低血圧による失神・めまい
+
+  - これらをみた時に患者を診察して、巨舌や眼窩周囲の紫斑を
+  見逃さないようにする
+
+  #align(right)[
+   #text(size: 12pt)[]
+  ] 
+][
+  #figure(image("figures/al_amyloidosis_gestalt.png", width: 50%))
+]
+]
+
+#polylux-slide[
+  == AL amyloidosisの疾患シナリオ②
+
+  - 元々MGUSはがわかっている患者が、心不全や腎機能低下を訴えて来院
+  - 検査にて著名な蛋白尿やBNP上昇から疑う
+
+  #align(right)[
+   #text(size: 12pt)[]
+  ] 
+]
+
+
 
 #polylux-slide[
   == HFpEFを見た時のRed flag
@@ -140,42 +204,15 @@
 #polylux-slide[
   == Amyloidの種類と特徴
 
-  - AL amyloidosis: 診断時の年齢は50-70歳が殆ど
-    + 巨舌: 10-17%
-    + 眼窩周囲の紫斑: 15%
-    + 心疾患: 60-75%
-    + 腎疾患: 50-70%
-    + 神経: 22%
-    + 肝臓: 20%
-    + 腸管: 10-17%
 
-  - AA amyloidosis: 年齢の中央値は50-60
-    + 腎臓: 蛋白尿陽性が95%, Nephrosisは50%
-    + 肝腫大: 10%程度 
-    + その他: 倦怠感、体重減少、脾腫、下痢、甲状腺腫など
-    + 心疾患は稀
+
+
 
   - ATTR-wt amyloidosis: 年齢の中央値は75歳, 90%は男性
     + 心臓: 進行性のHFpEFが多い
     + 神経: 手根管症候群が30-50%, 脊柱管狭窄症,  DSPもあり 
     + その他: 上腕二頭筋腱断裂やばね指, 末梢神経、肺、消化管、膀胱、前立腺など
     + 腎疾患は稀
-
-
-#table(
-  columns: 5,
-  [*種類*], [*前駆物質*], [*遺伝性/後天性*], [*障害臓器*], [*全身性/局所性*],
-  [AL], [免疫グロブリン軽鎖],[両方], [全臓器、中枢神経は稀], [両方],
-  [AA], [血清アミロイドA],[後天性], [中枢神経以外全て、通常腎臓], [全身性],
-  [ATTR-wt], [トランスサイレチン],[後天性], [心臓、肺、腱], [全身性],
-  [ATTR-v], [トランスサイレチン], [遺伝性], [末梢/自律神経、心臓、目、髄膜], [全身性],
-)
-   #align(right)[
-   #text(size: 12pt)[DynaMed. Amyloidosis. EBSCO Information Services. Accessed September 16th, 2024]
-  ] 
-
-  - 全部で30種類以上の前駆物質が判明している
-  - 上記の4種類でだいたい全部のうち80%くらいは占めている
 
 ]
 
@@ -192,6 +229,16 @@
 
 ]
 
+#polylux-slide[
+  == AL amyloidosisの診断後
+  
+  - 局在性か全身性かを判断するために他臓器を確認する
+    - 心臓: NT-proBNP, TTE
+    - 腎臓: 尿中蛋白定量
+    - 神経、消化器、肺は症状次第
+    - 肝臓: 肝腫大を確認
+
+]
 
 
 #polylux-slide[
