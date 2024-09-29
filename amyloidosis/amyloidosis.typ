@@ -23,7 +23,8 @@
 
 #polylux-slide[
     == Amyloidとは？
- - 1854年にVirchowが初めて提唱した、ミスフォールド前駆体タンパク質に由来する線維状物質
+ - 1854年にVirchowが発見したミスフォールド前駆体タンパク質に由来する
+ 線維状物質
   #align(right)[
    #text(size: 12pt)[
     Amyloid. 2020;27(4):217-222.
@@ -151,29 +152,28 @@
   - これらをみた時に患者を診察して、巨舌や眼窩周囲の紫斑を
   見逃さないようにする
 
-  #align(right)[
-   #text(size: 12pt)[]
-  ] 
 ][
-  #figure(image("figures/al_amyloidosis_gestalt.png", width: 50%))
+  #figure(image("figures/al_amyloidosis_gestalt.png", height: 80%))
+  #align(right)[
+   #text(size: 12pt)[
+    N Engl J Med. 2024;390(24):2295-2307.]
+  ] 
 ]
 ]
 
 #polylux-slide[
   == AL amyloidosisの疾患シナリオ②
 
-  - 元々MGUSはがわかっている患者が、心不全や腎機能低下を訴えて来院
-  - 検査にて著名な蛋白尿やBNP上昇から疑う
-
+  - 元々MGUSなどの基礎疾患がわかっている患者が、倦怠感や体重減少などの非特異的な症状で来院
+  - 検査で心不全や腎機能低下、臓器腫大が判明
+  
   #align(right)[
-   #text(size: 12pt)[]
+   #text(size: 12pt)[JAMA. 2020;324(1):79-89.]
   ] 
 ]
 
-
-
 #polylux-slide[
-  == HFpEFを見た時のRed flag
+  == 心Amyloidosis
 
   - 心不全は最も重要な合併症かつ、予後規定因子
   - ある研究だと、日本人のHFpEF患者のうち14%がATTR-wのCardiac amyloidosisというのもある
