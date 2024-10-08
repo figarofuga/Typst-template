@@ -121,11 +121,11 @@
 
   - 代表的な症状は倦怠感、低栄養であり、そこから攻めるのは辛い
   - どちらかというと、特定の臓器障害を見て疑った後にRed flagを探す
-    1. 非糖尿病患者のネフローゼ症候群
-    1. HFpEF(特に、LVH)
-    1. 肝脾腫
-    1. Gloves and stockings patternのPolyneuropathy
-    1. MGUS患者の妙な症状
+    + 非糖尿病患者のネフローゼ症候群
+    + HFpEF(特に、LVH)
+    + 肝脾腫
+    + Gloves and stockings patternのPolyneuropathy
+    + MGUS患者の妙な症状
 
 #align(right)[
    #text(size: 12pt)[
