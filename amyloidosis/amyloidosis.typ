@@ -1,5 +1,7 @@
 // Get Polylux from the official package repository
 #import "@preview/polylux:0.3.1": *
+#import "@preview/fletcher:0.5.1" as fletcher: diagram, node, edge
+#import fletcher.shapes: diamond
 
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
@@ -78,7 +80,7 @@
   #align(right)[
    #text(size: 12pt)[DynaMed. Amyloidosis. EBSCO Information Services. Accessed September 16th, 2024]
   ] 
-#set text(font: "Noto Serif CJK JP", size: 20pt)
+#set text(size: 20pt)
   - 全部で30種類以上の前駆物質が判明している
   - 上記の4種類でだいたい全部のうち80%くらいは占めている
   
@@ -116,6 +118,28 @@
   - どちらかというと、#text(size: 24pt, fill: red)[*特定の臓器障害*]を見て疑った後にRed flagを探す
 ]
 
+#polylux-slide[
+  == Amyloidosisの診断
+
+  #diagram(
+    node-stroke: 1pt, 
+    edge-stroke: 1pt,
+    node((0, 0), [#text(size: 16pt)[Amyloidosisを疑う]], corner-radius: 2pt),
+    edge("-|>"), 
+    node((1.0, 0), [#text(size: 16pt)[確定診断と典型的な臓器の検査:\ 非侵襲的検査]], corner-radius: 2pt), 
+    edge("-|>"),
+    node((2.0, 0), [#text(size: 16pt)[AmyloidosisのTyping:\ 侵襲的検査]], corner-radius: 2pt)
+    )
+  
+
+
+  - Step by stepで考える
+  - 具体的には以下の順番
+    + Amyloidosisを疑う
+    + Amyloidosisの確定診断とType～非侵襲的検査
+    + Amyloidosisの確定診断とType～侵襲的検査
+
+]
 
 #polylux-slide[
   == 特定の臓器障害
@@ -146,7 +170,7 @@
 #polylux-slide[
   == AA amyloidosisの特徴
 
-  - AA amyloidosis: 年齢の中央値は50-60
+  - AA amyloidosis: 年齢の中央値は50-60歳
     + 腎臓: 蛋白尿陽性
     + 肝腫大: 10%程度 
     + その他: 倦怠感、体重減少、脾腫、下痢、甲状腺腫など
@@ -160,7 +184,7 @@
   - 慢性炎症性疾患の背景がある患者の高度蛋白尿、全身浮腫
     - TB, RA, IBD, SLE, FMF, Sarcoidosis, HIVなど
   - 蛋白尿が95%でNephrosis rangeは50%にもなる
-  - 心不全や神経障害がある時は別の疾患を疑う
+  - 心不全や神経障害は非典型的
   #align(right)[
    #text(size: 12pt)[Rheum Dis Clin North Am. 2018;44(4):585-603.]
   ] 
@@ -187,7 +211,7 @@
 
 #side-by-side[
   - 原因不明の心不全入院: HFpEFでTTEをした時の著名な心室壁肥厚
-  - 腎機能低下: 蛋白尿
+  - 腎機能低下: 著名な蛋白尿
   - 神経障害: 両手足のしびれ、両手の手根管症候群、起立性低血圧による失神・めまい
 
   - これらをみた時に患者を診察して、巨舌や眼窩周囲の紫斑を
@@ -205,11 +229,35 @@
 #polylux-slide[
   == AL amyloidosisの疾患シナリオ②
 
-  - 元々MGUSなどの基礎疾患がわかっている患者が、倦怠感や体重減少などの非特異的な症状で来院
+  - 元々MGUSなどの基礎疾患がわかっている患者が、倦怠感や浮腫、体重減少などの非特異的な症状で来院
   - 検査で心不全や腎機能低下、臓器腫大が判明
   
   #align(right)[
    #text(size: 12pt)[JAMA. 2020;324(1):79-89.]
+  ] 
+]
+
+#polylux-slide[
+  == ATTR-wt amyloidosisの特徴
+
+  - ATTR-wt amyloidosis: 年齢の中央値は75歳, 90%は男性
+    + 心臓: 最も多い、進行性のHFpEFが多い
+    + 神経: 手根管症候群が30-50%、脊柱管狭窄症、DSP
+    + その他: 上腕二頭筋腱断裂やばね指, 末梢神経、肺、消化管、膀胱、前立腺など
+    + 腎疾患は稀
+
+]
+
+#polylux-slide[
+  == ATTR-wt amyloidosisの疾患シナリオ
+
+  - 高齢者のHFpEFでエコーをしたら特徴的な所見
+    - 後壁の心室壁厚 > 15mm, Granular sparkiling pattern、ECGで低電位など
+  - 高齢者の両側手根管症候群のようなやや違和感があるStory
+    - 上腕二頭筋腱断裂
+
+  #align(right)[
+   #text(size: 12pt)[Rheum Dis Clin North Am. 2018;44(4):585-603.]
   ] 
 ]
 
@@ -232,61 +280,38 @@
 
 
 #polylux-slide[
-  == Amyloidosisの診断
+  == Amyloidosisの診断～非侵襲的検査
   
   - AL, ATTR-w amyloidosisの診断はかなり洗練されてきている
     - AL amyloidosis: 血液・尿中免疫電気泳動/固定法、Free Light Chain
-        - 腹部皮下脂肪の生検
   - ATTR-w: 骨シンチ()
+
+]
+
+#polylux-slide[
+  == Amyloidosisの診断～生検
+  
   - Amyloidの組織生検は必須
     - MGUSは高齢者のうち7%にある為、Plasma cell dyscrasiaの存在とAmyloidosisの原因はしっかり確認する
-]
-
-#polylux-slide[
-  == Amyloidの種類と特徴
-
-
-
-
-
-  - ATTR-wt amyloidosis: 年齢の中央値は75歳, 90%は男性
-    + 心臓: 進行性のHFpEFが多い
-    + 神経: 手根管症候群が30-50%, 脊柱管狭窄症,  DSPもあり 
-    + その他: 上腕二頭筋腱断裂やばね指, 末梢神経、肺、消化管、膀胱、前立腺など
-    + 腎疾患は稀
+    - また、Amyloidの種類を特定するためにも必要
 
 ]
 
-
-
 #polylux-slide[
-  == AL amyloidosisの診断後
+  == Amyloidosisの診断後
   
-  - 局在性か全身性かを判断するために他臓器を確認する
-    - 心臓: NT-proBNP, TTE
-    - 腎臓: 尿中蛋白定量
-    - 神経、消化器、肺は症状次第
-    - 肝臓: 肝腫大を確認
+  - AL amyloidosisは血液内科
+  - ATTR-w amyloidosisは循環器内科に紹介
+    - Tafosmideは慶應でやっている
 
 ]
-
-#polylux-slide[
-  == AL amyloidosisの診断後
-  
-  - 局在性か全身性かを判断するために他臓器を確認する
-    - 心臓: NT-proBNP, TTE
-    - 腎臓: 尿中蛋白定量
-    - 神経、消化器、肺は症状次第
-    - 肝臓: 肝腫大を確認
-
-]
-
 
 #polylux-slide[
   == Take home message
   
-  - Sepsisの輸液はまずはガツンと、その後は絞る
-  - 早期のNAD併用を考慮
-  - 患者背景や他の指標を考えて、MAPの目標値を変更しても良いかも！
+  - 特徴的な臓器障害パターンからAmyloidosisを引っ掛けよう
+  - 心アミロイドーシスが最も重要！探しに行く！
+  - ALは採血・検尿、ATTR-wtはPypシンチで非侵襲的に診断を！
+  - 最終的にはTissue is issue！ATTR-wtアミロイドーシス疑いの時は腹壁脂肪を生検する！
   
 ]
