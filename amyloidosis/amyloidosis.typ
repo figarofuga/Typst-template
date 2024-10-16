@@ -43,10 +43,10 @@
   == Amyloidosisの分類
 
  - 遺伝性 vs. 後天性 / 全身性 vs. 局所
-   + 局所の代表例はCAAとか、Alzheimer型
+   - 局所の代表例はCAAとか、Alzheimer型
 → 今回は*全身性のアミロイドーシス*に焦点を当てる
  - Amyloidの種類によっても分類可能
-   + AA, AL, ATTR etcetc
+   - AA, AL, ATTR etcetc
  - Amyloidの種類での分類が最もわかりやすい
 
 ]
@@ -115,7 +115,7 @@
   == どうやって診断する？
 
   - 代表的な症状は倦怠感、低栄養であり、そこから攻めるのは辛い
-  - どちらかというと、#text(size: 24pt, fill: red)[*特定の臓器障害*]を見て疑った後にRed flagを探す
+  - どちらかというと、#text(size: 24pt, fill: red)[*特定の臓器障害*]を見て疑った後にRed flagを探すのが現実的
 ]
 
 #polylux-slide[
@@ -126,23 +126,18 @@
     edge-stroke: 1pt,
     node((0, 0), [#text(size: 16pt)[Amyloidosisを疑う]], corner-radius: 2pt),
     edge("-|>"), 
-    node((1.0, 0), [#text(size: 16pt)[確定診断と典型的な臓器の検査:\ 非侵襲的検査]], corner-radius: 2pt), 
+    node((1.0, 0), [#text(size: 16pt)[Clueとなる追加情報を集める]], corner-radius: 2pt), 
     edge("-|>"),
     node((2.0, 0), [#text(size: 16pt)[AmyloidosisのTyping:\ 侵襲的検査]], corner-radius: 2pt)
     )
   
-
-
   - Step by stepで考える
-  - 具体的には以下の順番
-    + Amyloidosisを疑う
-    + Amyloidosisの確定診断とType～非侵襲的検査
-    + Amyloidosisの確定診断とType～侵襲的検査
+  - 特徴的な臓器障害と違和感を見逃さない
 
 ]
 
 #polylux-slide[
-  == 特定の臓器障害
+  == 特徴的な臓器障害
 
   - Amyloidが沈着しやすい臓器が決まっており、以下の時にSystemic amyloidosisを疑う
     + 非糖尿病患者のネフローゼ症候群
@@ -162,7 +157,7 @@
   == 多すぎてようわからん！
 
   - 出来れば、AA, AL, ATTR-wtの3つはゲシュタルトを覚えておくと良い
-  - 疑った時に問診・身体所見で更に疑いを深める
+  - 疑った時に問診・身体所見を追加
 
   
 ]
@@ -238,9 +233,9 @@
 ]
 
 #polylux-slide[
-  == ATTR-wt amyloidosisの特徴
+  == ATTR amyloidosisの特徴
 
-  - ATTR-wt amyloidosis: 年齢の中央値は75歳, 90%は男性
+  - ATTR amyloidosis: 年齢の中央値は75歳, 90%は男性
     + 心臓: 最も多い、進行性のHFpEFが多い
     + 神経: 手根管症候群が30-50%、脊柱管狭窄症、DSP
     + その他: 上腕二頭筋腱断裂やばね指, 末梢神経、肺、消化管、膀胱、前立腺など
@@ -249,7 +244,7 @@
 ]
 
 #polylux-slide[
-  == ATTR-wt amyloidosisの疾患シナリオ
+  == ATTR amyloidosisの疾患シナリオ
 
   - 高齢者のHFpEFでエコーをしたら特徴的な所見
     - 後壁の心室壁厚 > 15mm, Granular sparkiling pattern、ECGで低電位など
@@ -261,7 +256,19 @@
 ]
 
 #polylux-slide[
-  == 心Amyloidosis
+  == Amyloidosisの疾患シナリオ
+
+  - 腎臓のNephrosis → AA, AL amyloidosis
+  - 心Amyloidosis → AL, ATTR amyloidosis
+  - Polyneuropathy → AL, ATTR amyloidosis
+  - #text(size: 24pt, fill: red)[*最も重要なのは心Amyloidosis*]
+  
+  
+]
+
+
+#polylux-slide[
+  == 心Amyloidosisの重要性
 
   - 心不全は#text(size: 24pt, fill: red)[*最も重要な合併症かつ、予後規定因子*]
   - ある研究だと、日本人のHFpEF患者のうち14%がATTR-wのCardiac amyloidosisというのもある
@@ -273,54 +280,61 @@
   + 強い心室の壁肥厚、特に後壁 > 15mm
   + 壁肥厚があるにもかかわらず、心電図が低電位 or QS pattern(偽梗塞)
   + 病歴で、Polyneuropathy、手根管症候群、Nephrosisの合併
+  - 個人的には、CMRとTTEが良い
+    - CMRは基本は造影だが、Native T1 mappingという手法で単純MRIでも可能(当院はできないらしい...)
   
 ]
 
 
-
 #polylux-slide[
-  == Amyloidosisの診断～非侵襲的検査
+  == 心Amyloidosisの診断
   
   - AL, ATTR-wt amyloidosisの診断はかなり洗練されてきている
-  - 基本的にはAL amyloidosisを否定してからATTR-wt amyloidosisをしっかり検査
-    - AL amyloidosis: 血液・尿中免疫電気泳動/固定法、Free Light Chain
+  - 基本的にはAL amyloidosisを否定してからATTR-wt amyloidosisを画像で検査
+    - Monoclonal蛋白検出: 血液・尿中免疫電気泳動/固定法、Free Light Chain
     これらが全て陰性の時の感度は約99%
     #align(right)[
    #text(size: 12pt)[JAMA. 2024;331(9):778-791.]
 ] 
-  - ATTR-w: 骨シンチ()
+  - ATTR: ピロリン酸骨(Tc99m)シンチを使う事で、非侵襲的に診断可能
+    - Monoclonal蛋白検出→PyPシンチ陽性 = ATTR-wt amyloidosis確定診断
+  - ATTRがwtかv(遺伝性か孤発性か)は家族歴を確認するが結局は遺伝子検査が必須
+    - 熊本と長野に集積あり
+    - 浸透率の問題があるため
 
 ]
 
+
 #polylux-slide[
-  == AL amyloidosisの診断の注意点
+  == Monoclonal蛋白が検出されたら？
   
-  - AL, ATTR-wt amyloidosisの診断はかなり洗練されてきている
-  - 基本的にはAL amyloidosisを否定してからATTR-wt amyloidosisをしっかり検査
-    - AL amyloidosis: 血液・尿中免疫電気泳動/固定法、Free Light Chain
-    これらが全て陰性の時の感度は約99%
+  - この場合は、Amyloidの組織生検は必須
+    - MGUSは70歳以上で5%、ATTR-wtのCAのうち10-40%はAL amyloidosisの検査で異常が出る為
+    - 局所麻酔下での脂肪織の生検が非侵襲的でよい
+
     #align(right)[
    #text(size: 12pt)[JAMA. 2024;331(9):778-791.]
 ] 
-  - ATTR-w: 骨シンチ()
 
 ]
-
-
 #polylux-slide[
-  == Amyloidosisの診断～生検
-  
-  - Amyloidの組織生検は必須
-    - MGUSは70歳以上で5%、ATTR-wtのCAのうち10-40%はAL amyloidosisの検査で異常が出る為組織は必須
-    - また、Amyloidの種類を特定するためにも必要
+  == Cardiac amyloidosis(CA)診断のまとめ
+
+#figure(image("figures/ca_pathway.png", height: 80%))
+
+ #align(right)[
+   #text(size: 12pt)[Ann Intern Med. 2023;176(3):ITC33-ITC48.   
+]
+] 
 
 ]
 
 #polylux-slide[
   == Amyloidosisの診断後
-  
+
+  - 治療は専門科に任せる  
   - AL amyloidosisは血液内科
-  - ATTR-w amyloidosisは循環器内科に紹介
+  - 慶應の循環器内科に紹介
     - Tafosmideは慶應でやっている
 
 ]
