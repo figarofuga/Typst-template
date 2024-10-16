@@ -253,8 +253,7 @@
 
   - 高齢者のHFpEFでエコーをしたら特徴的な所見
     - 後壁の心室壁厚 > 15mm, Granular sparkiling pattern、ECGで低電位など
-  - 高齢者の両側手根管症候群のようなやや違和感があるStory
-    - 上腕二頭筋腱断裂
+  - 高齢者の上腕二頭筋腱断裂, 両側手根管症候群のようなやや違和感があるStory
 
   #align(right)[
    #text(size: 12pt)[Rheum Dis Clin North Am. 2018;44(4):585-603.]
@@ -269,7 +268,7 @@
 #align(right)[
    #text(size: 12pt)[ESC Heart Fail. 2023;10(3):1896-1906.]
 ] 
-  - とはいえ、やはり現実的ではない
+  - とはいえ、HFpEF全例で疑うのはやはり現実的ではない
   - 以下の特徴があったら疑うくらいでよいか
   + 強い心室の壁肥厚、特に後壁 > 15mm
   + 壁肥厚があるにもかかわらず、心電図が低電位 or QS pattern(偽梗塞)
@@ -282,17 +281,37 @@
 #polylux-slide[
   == Amyloidosisの診断～非侵襲的検査
   
-  - AL, ATTR-w amyloidosisの診断はかなり洗練されてきている
+  - AL, ATTR-wt amyloidosisの診断はかなり洗練されてきている
+  - 基本的にはAL amyloidosisを否定してからATTR-wt amyloidosisをしっかり検査
     - AL amyloidosis: 血液・尿中免疫電気泳動/固定法、Free Light Chain
+    これらが全て陰性の時の感度は約99%
+    #align(right)[
+   #text(size: 12pt)[JAMA. 2024;331(9):778-791.]
+] 
   - ATTR-w: 骨シンチ()
 
 ]
 
 #polylux-slide[
+  == AL amyloidosisの診断の注意点
+  
+  - AL, ATTR-wt amyloidosisの診断はかなり洗練されてきている
+  - 基本的にはAL amyloidosisを否定してからATTR-wt amyloidosisをしっかり検査
+    - AL amyloidosis: 血液・尿中免疫電気泳動/固定法、Free Light Chain
+    これらが全て陰性の時の感度は約99%
+    #align(right)[
+   #text(size: 12pt)[JAMA. 2024;331(9):778-791.]
+] 
+  - ATTR-w: 骨シンチ()
+
+]
+
+
+#polylux-slide[
   == Amyloidosisの診断～生検
   
   - Amyloidの組織生検は必須
-    - MGUSは高齢者のうち7%にある為、Plasma cell dyscrasiaの存在とAmyloidosisの原因はしっかり確認する
+    - MGUSは70歳以上で5%、ATTR-wtのCAのうち10-40%はAL amyloidosisの検査で異常が出る為組織は必須
     - また、Amyloidの種類を特定するためにも必要
 
 ]
