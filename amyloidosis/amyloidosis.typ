@@ -262,8 +262,12 @@
 
 #polylux-slide[
   == ECGの特徴
-  
-  #figure(image("figures/amyloid_ecg.jpeg", height: 50%))
+
+  #side-by-side(gutter: 1mm, columns: (1fr, 1fr))[
+    #figure(image("figures/amyloid_ecg.jpeg", width: 100%))
+  ][
+    #figure(image("figures/ecg_table.jpeg", width: 100%))
+  ]
   
   + AF
   + 壁肥厚があるにもかかわらず、心電図が低電位
@@ -298,14 +302,14 @@
 
 #polylux-slide[
   == CMRの特徴
-  #side-by-side(gutter: 1mm, columns: (1.5fr, 1fr))[
+  #side-by-side(gutter: 1mm, columns: (1fr, 1fr))[
     #figure(image("figures/cmr_lge.jpeg", height: 40%))
   ][
     #figure(image("figures/cmr_t1mapping.jpeg", height: 40%))
   ]
   
   - CMR: 基本は造影MRI
-    - LGEは左心室内膜下優位に分布
+    - LGEは左心室内膜下優位に分布(感度85%, 特異度92%)
   - 造影剤が使えない時もT1 mappingという手法で診断可能
     - 感度80-92%，特異度56-91%
     - 当院だとできないらしい・・・・・・
@@ -315,7 +319,7 @@
 #polylux-slide[
   == 心Amyloidosisのタイピング
   
-  - AL, ATTR amyloidosisの診断をする
+  - AL, ATTR amyloidosisの診断をする(95％がこの2種類)
   - AL: Monoclonal蛋白検出で非侵襲的に診断可能 
     - 血液・尿中免疫電気泳動/固定法、Free Light Chain
     - これらが全て陰性の時の感度は約99%
@@ -362,7 +366,7 @@
   - 採血・検尿でM蛋白が陽性になったら→Amyloidの組織生検は必須
     - MGUSは70歳以上で5%、ATTR-wtのCAのうち10-40%はAL amyloidosisの検査で異常が出る為
     - 局所麻酔下での脂肪織の生検が非侵襲的でよい
-
+      - 感度 ATTR-v: 65-85%, AL: 60-80%, ATTR-wt:14%
     #align(right)[
    #text(size: 12pt)[JAMA. 2024;331(9):778-791.]
 ] 
@@ -371,7 +375,7 @@
 #polylux-slide[
   == Cardiac amyloidosis(CA)診断のまとめ
 
-#figure(image("figures/ca_pathway.png", height: 90%))
+#figure(image("figures/ca_pathway.png", height: 80%))
 
  #align(right)[
    #text(size: 12pt)[Ann Intern Med. 2023;176(3):ITC33-ITC48.   
