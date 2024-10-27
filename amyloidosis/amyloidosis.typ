@@ -247,7 +247,23 @@
 
 #polylux-slide[
   == 心Amyloidosisの重要性
+  
+  - 心不全は#text(size: 24pt, fill: red)[*最も重要な合併症かつ、予後規定因子*]
+  - HFpEFの中でも隠れ心amyloidosisが多いとされる
+#align(right)[
+   #text(size: 12pt)[ESC Heart Fail. 2023;10(3):1896-1906.]
+] 
+  - とはいえ、HFpEF全例で疑うのはやはり現実的ではない
+  + 病歴で、Polyneuropathy、手根管症候群、Nephrosisの合併
+  - 心電図も疑うきっかけになる
 
+]
+
+
+#polylux-slide[
+  == 心Amyloidosisの重要性
+  
+  #figure(image("figures/amyloid_ecg.jpeg", height: 50%))
   - 心不全は#text(size: 24pt, fill: red)[*最も重要な合併症かつ、予後規定因子*]
   - HFpEFの中でも隠れ心amyloidosisが多いとされる
 #align(right)[
