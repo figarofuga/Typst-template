@@ -254,45 +254,66 @@
    #text(size: 12pt)[ESC Heart Fail. 2023;10(3):1896-1906.]
 ] 
   - とはいえ、HFpEF全例で疑うのはやはり現実的ではない
-  + 病歴で、Polyneuropathy、手根管症候群、Nephrosisの合併
+    - 病歴で、Polyneuropathy、手根管症候群、Nephrosisの合併
   - 心電図も疑うきっかけになる
 
 ]
 
 
 #polylux-slide[
-  == 心Amyloidosisの重要性
+  == ECGの特徴
   
   #figure(image("figures/amyloid_ecg.jpeg", height: 50%))
-  - 心不全は#text(size: 24pt, fill: red)[*最も重要な合併症かつ、予後規定因子*]
-  - HFpEFの中でも隠れ心amyloidosisが多いとされる
-#align(right)[
-   #text(size: 12pt)[ESC Heart Fail. 2023;10(3):1896-1906.]
-] 
-  - とはいえ、HFpEF全例で疑うのはやはり現実的ではない
-  - 以下の特徴があったら疑うくらいでよいか
-  + 強い心室の壁肥厚、特に後壁 > 15mm
-  + 壁肥厚があるにもかかわらず、心電図が低電位 or QS pattern(偽梗塞)
-  + 病歴で、Polyneuropathy、手根管症候群、Nephrosisの合併
+  
+  + AF
+  + 壁肥厚があるにもかかわらず、心電図が低電位
+  + QS pattern(偽梗塞パターン)
 
 ]
 
 #polylux-slide[
-  == 心Amyloidosisの診断①
+  == 心Amyloidosisの診断
   
-  - TTE, CMRが有用
-  - TTE: 心室壁の厚さ、心機能、granular sparkling pattern
+  - 侵襲性と値段の問題から、まずはTTEが使われる事が多い
+  - CMR(ややハードルは高いが)もかなり精度が良い
+  - TTEで疑う→CMR→更なる検査という順番が現実的
+  - CMRはCVICという会社でもやってくれる(飯田橋だがオススメ)
+
+]
+
+
+#polylux-slide[
+  == TTEの特徴
+  
+  #figure(image("figures/amyloid_tte.jpeg", height: 40%))
+
+  - 心筋壁/乳頭筋/弁/中隔の肥厚  
+    - 中隔/後壁比が< 1.3，
+    - 肥厚心筋の “granular sparkling”
+  - 心室中隔/左室後壁の低収縮
+  - 心電図上の低電位と心室中隔肥厚(> 1.98 cm)の組み合わせで，感度 72%，特異度 91%
+  
+]
+
+
+#polylux-slide[
+  == CMRの特徴
+  #side-by-side(gutter: 1mm, columns: (1.5fr, 1fr))[
+    #figure(image("figures/cmr_lge.jpeg", height: 40%))
+  ][
+    #figure(image("figures/cmr_t1mapping.jpeg", height: 40%))
+  ]
+  
   - CMR: 基本は造影MRI
-    - LGEは左心室全体に分布する
+    - LGEは左心室内膜下優位に分布
   - 造影剤が使えない時もT1 mappingという手法で診断可能
+    - 感度80-92%，特異度56-91%
     - 当院だとできないらしい・・・・・・
 
 ]
 
-
-
 #polylux-slide[
-  == 心Amyloidosisの診断②
+  == 心Amyloidosisのタイピング
   
   - AL, ATTR amyloidosisの診断をする
   - AL: Monoclonal蛋白検出で非侵襲的に診断可能 
@@ -302,11 +323,20 @@
    #text(size: 12pt)[JAMA. 2024;331(9):778-791.]
 ] 
   - ATTR: ピロリン酸骨(Tc99m)シンチを使う事で、非侵襲的に診断可能
-    - Monoclonal蛋白検出→PyPシンチ陽性 = ATTR amyloidosis確定診断
-    - 浸透率の問題があるため
+    - Monoclonal蛋白陰性→PyPシンチ陽性 = ATTR amyloidosis確定診断
 
 ]
 
+
+#polylux-slide[
+  == PyPシンチの特徴
+ #figure(image("figures/pyp_scinti.jpeg", height: 50%))
+  - 縦隔との比較が重要
+  - 陽性の場合はATTR amyloidosisの可能性が高い
+    - ATTR-CAの診断能は感度58-99%，特異度79-100%でALを除外したら一発診断可能
+
+
+]
 
 #polylux-slide[
   == Cardiac amyloidosis(CA)診断のアルゴリズム
