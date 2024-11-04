@@ -10,15 +10,15 @@
   #align(horizon + center)[
     = Very minimalist slides
 
-    A lazy authorだぞ！
-
-    July 23, 2023
+    CJDについて
+    Nozomi Niimi
+    July 23, 2024
   ]
 ]
 
 #polylux-slide[
-  == First slide
-
+  == CJDとは
+  
   Some static text on this slide.#footnote[広辞苑より] #h(1em)
 
   それはそれでよい#footnote[Harrison内科学より] #h(1em)
@@ -26,6 +26,13 @@
 ]
 
 #polylux-slide[
+  == This slide changes!
+
+  You can always see this.
+  // Make use of features like #uncover, #only, and others to create dynamic content
+  #uncover(2)[But this appears later!]
+
+]#polylux-slide[
   == This slide changes!
 
   You can always see this.
