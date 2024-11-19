@@ -74,11 +74,7 @@
 #side-by-side(gutter: 1mm, columns: (1fr, 1.5fr))[
   - 急速進行性(2年以内)認知症で疑う
   - それ以外だと、以下の特徴があると疑う・・・・・・・
-  "Myoclonusを伴う認知症は否定されるまでCJD"
 
-  #align(right)[
-   #text(size: 12pt)[NEJM]
-  ] 
 
 ][
   #figure(image("figures/cjd_diagnosis_flow.jpeg", width: 90%))
@@ -192,10 +188,13 @@
 #polylux-slide[
   == CJDの鑑別の難しさ
   
-  - CJDセンターで20%は違うという結果があった
+  - CJDを疑われた患者の病理で32%は違うという結果があった
+    - さらに、そのうち#text(size: 24pt, fill: red, weight: "bold")[23%(全体の6%)]はtreatableだったとされる
+    #align(right)[
+   #text(size: 12pt)[Ann Neurol. 2011;70(3):437-444.]
+  ] 
   - 最大の鑑別疾患は自己免疫性脳炎
-  - 実際・・・・・・・
-  
+
   
 ]
 
@@ -204,9 +203,10 @@
   == 病理解剖
 
 
-#side-by-side(gutter: 1mm, columns: (1fr, 1.5fr))[
-
+#side-by-side(gutter: 1mm, columns: (1fr, 1fr))[
+#figure(image("figures/cjd_ncnp_hp.jpeg", width: 80%))
   - 国立精神・神経医療研究センター
+
   #align(right)[
    #text(size: 12pt)[
     https://brain-bank.ncnp.go.jp/
@@ -214,7 +214,7 @@
   ] 
 
 ][
-  #figure(image("figures/cjd_diagnosis_flow.jpeg", width: 90%))
+  #figure(image("figures/cjd_mihara_hp.jpeg", width: 80%))
   - 公益財団法人 脳血管研究所 美原記念病院
   #align(right)[
    #text(size: 12pt)[
