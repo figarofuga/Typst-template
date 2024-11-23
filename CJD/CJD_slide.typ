@@ -5,10 +5,27 @@
 
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
-#set text(font: "Noto Serif CJK JP", size: 20pt)
+#set text(font: "Noto Serif CJK JP", size: 24pt)
 #set footnote.entry(clearance: 0.1em, gap: 0.2em)
 #show heading:set align(start + top)
 #set align(horizon)
+
+#set list(marker: ([•], [○], [✓]))
+#let list-counter = counter("list")
+
+#show list: set text(14pt)
+#show list: it => {
+  list-counter.step()
+
+  context {
+    set text(24pt) if list-counter.get().first() == 1
+    set text(20pt) if list-counter.get().first() == 2
+    set text(16pt) if list-counter.get().first() >= 3
+    it
+  }
+  list-counter.update(i => i - 1)
+}
+
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
 
@@ -46,9 +63,8 @@
 #polylux-slide[
   == CJDの分類と疫学
 
-  #figure(image("figures/cjd_piechart.jpeg", height: 80%))
+  #figure(image("figures/cjd_piechart.jpeg", height: 70%))
   
-  - 孤発性, 遺伝性, 獲得性に分けられる
   - 日本では3/4以上が孤発性
 
 ]
@@ -71,8 +87,9 @@
   == CJDの診断の道順
 
 
-#side-by-side(gutter: 1mm, columns: (1fr, 1.5fr))[
-  - 急速進行性(2年以内)認知症で疑う
+#side-by-side(gutter: 1mm, columns: (1fr, 1fr))[
+  - 急速進行性(2年以内)
+  認知症で疑う
   - それ以外だと、以下の特徴があると疑う・・・・・・・
 
 
