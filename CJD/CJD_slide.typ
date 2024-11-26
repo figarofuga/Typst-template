@@ -5,7 +5,6 @@
 
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
-#set text(font: "Noto Serif CJK JP", size: 24pt)
 #set footnote.entry(clearance: 0.1em, gap: 0.2em)
 #show heading:set align(start + top)
 #show heading: set text(size: 28pt)
@@ -28,6 +27,14 @@
   }
   list-counter.update(i => i - 1)
 }
+
+// for main text
+#set text(
+    lang: "ja",  // 英語しか使わない文書では"en"とする（もしくは指定しない）
+    font: ("Calibri", "Noto Serif CJK JP"),  
+    // font: (日本語文字を含まないフォント, 日本語文字を含むフォント),  となっている
+)
+
 
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
