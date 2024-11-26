@@ -59,6 +59,7 @@
   - Creutzfeldt-Jakob病
   - Prion病の一つ
   - 有病率は1～2/100万人とされる希少疾患
+    - 特発性多中心性キャッスルマン病と同じくらいの発症率
   - 実は伝染病として5類感染症に指定されている
 
 ]
@@ -125,7 +126,7 @@
 #polylux-slide[
   == CJDの診断～MRI
 
- #side-by-side(gutter: 1mm, columns: (1.5fr, 1fr))[
+ #side-by-side(gutter: 0mm, columns: (1.6fr, 1fr))[
 
   - 単純MRIで評価
     - 造影剤MRIで他の疾患除外することもある
@@ -141,7 +142,7 @@
 #align(right)[
    #text(size: 12pt)[
     
-  Brian S Appleby, MD, Mark L Cohen, MD. Creutzfeldt-jacob disease. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed November 24th, 2024. https://www.uptodate.com/contents/treatment-of-adrenal-insufficiency-in-adults?source=mostViewed_widget
+  Brian S Appleby, MD, Mark L Cohen, MD. Creutzfeldt-jakob disease. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed November 24th, 2024. https://www.uptodate.com/contents/treatment-of-adrenal-insufficiency-in-adults?source=mostViewed_widget
     ]]
 ]
 
@@ -149,19 +150,18 @@
 #polylux-slide[
   == CJDの診断～脳波
 
-  #figure(image("figures/cjd_eeg.jpeg", height: 50%))
-  - SPDが有名
-  - 他にも・・・・・・・
+  #figure(image("figures/cjd_eeg.jpeg", height: 40%))
+  - 1-2Hzの定期的な棘波(2相や3相)の複合波がsCJDを示唆する
+    - 感度67%, 特異度86%
+  - 脳炎や代謝、中毒疾患などを除外するのにも有用
+  #align(right)[
+   #text(size: 12pt)[
+    DynaMed. Creutzfeldt-Jakob Disease. EBSCO Information Services. Accessed 2024年11月26日. https://www.dynamed.com/condition/creutzfeldt-jakob-disease
+    ]
+  ] 
   
 ]
 
-#polylux-slide[
-  == 髄液検査は危険じゃない？
-
-  - 普通にやればOK
-  - 当院だとすこしうるさいかも・・・・・・
-  
-]
 
 #polylux-slide[
   == CJDの診断～髄液検査
@@ -169,18 +169,30 @@
 
   #figure(image("figures/cjd_csf.jpeg", height: 50%))
   - 除外診断に必須
-  - 14-3-3蛋白が有名
-  - それ以外だとRT-QUick・・・・・・・
-  
+  - 14-3-3蛋白が有名だが今は直接的にprion蛋白RT-QuICが主流
+      
 ]
+
+#polylux-slide[
+  == 髄液検査は危険じゃない？
+
+  - 脳脊髄液は低感染性だが、腰椎穿刺の時にはちゃんと #lb フェイスマスクもつける
+  - 疑いだけで、検査を差し控えまでは不要だが、maximal precautionで最低限の回数にする  
+  
+#align(right)[
+   #text(size: 12pt)[
+    http://prion.umin.jp/guideline/cjd_2020.pdf
+    ]
+  ] 
+]
+
 
 #polylux-slide[
   == CJDの診断～髄液検査 2
 
   #figure(image("figures/nagasaki_hp.jpeg", height: 50%))
-  - いくつかの病院で可能
-  - 長崎病院で行う
-  - やり方が厳しい
+  - 長崎病院に検体を送る
+  - やり方が難しい
 ]
 
 #polylux-slide[
@@ -200,7 +212,8 @@
   == 診断したら・・・・・・
 
   - 5類感染症なので、保健所に報告
-  - その時に海外渡航歴だったり、いろんな事の記載が必要なのでしっかり家族に聞く
+  - サーベイランスで聞いた項目を聞く
+  - 一発でOKにならないので保健所から電話が来ても気にしない
 
   
 ]
