@@ -5,10 +5,35 @@
 
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
-#set text(font: "Noto Serif CJK JP", size: 20pt)
 #set footnote.entry(clearance: 0.1em, gap: 0.2em)
 #show heading:set align(start + top)
+#show heading: set text(size: 28pt)
 #set align(horizon)
+
+#let lb = linebreak(justify: false)
+
+#set list(marker: ([•], [◦], [🗸]))
+#let list-counter = counter("list")
+
+#show list: set text(14pt)
+#show list: it => {
+  list-counter.step()
+
+  context {
+    set text(24pt) if list-counter.get().first() == 1
+    set text(20pt) if list-counter.get().first() == 2
+    set text(16pt) if list-counter.get().first() >= 3
+    it
+  }
+  list-counter.update(i => i - 1)
+}
+
+// for main text
+#set text(
+    lang: "ja",  // 英語しか使わない文書では"en"とする（もしくは指定しない）
+    font: ("Calibri", "Noto Serif CJK JP"),  
+    // font: (日本語文字を含まないフォント, 日本語文字を含むフォント),  となっている
+)
 
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
@@ -37,12 +62,12 @@
 #polylux-slide[
   = FMFとは
   
-  - 自己炎症性疾患の1つ
+  - 自然免疫による自己炎症性疾患の1つ
   - 成人発症でも良い数少ない疾患(それ以外だとPPFAくらい)
   - 家族性地中海熱は常染色体劣性（潜性）遺伝形式で遺伝
-
-
   ]
+
+
 #polylux-slide[
   = FMFの疫学
   
@@ -50,7 +75,7 @@
   - 2009年の研究だと日本人で約500人で男女差はない
 (https://www.nanbyou.or.jp/entry/4447)
 
-  - 同じくらいの疾患は・・・・・・・
+  - 潜在的にはもっとたくさんいると思われている
 
 
   ]
@@ -63,6 +88,8 @@
     - ストレスや感染症、月経などに影響される。期間の長さは個人差がある
   - 発作間は症状がないのが特徴
   - 急性腹症、胸膜炎などの漿膜炎や関節炎などが特徴的
+
+  #align(center)[イメージは#text(size: 24pt, fill: red)[*繰り返す虫垂炎*]]
 
 
   ]
@@ -81,9 +108,20 @@
   #polylux-slide[
   = FMFの診断
   
-  - Tal なんとか基準
+  #figure(image("figures/fmf_diagnosis_jp.jpeg", height: 50%))
+
+  - Tal なんとか基準は特異度が高すぎると言われている
   - 日本だと厚生労働省が別個に定めている
 
+
+  ]
+
+  #polylux-slide[
+  = FMFと周辺領域
+  
+  - 基準を満たさない、"FMF崩れ"みたいな疾患が多いと言われている
+  - SpAはFMFとの鑑別が難しい
+  - Behcet病と併存する事もある  
 
   ]
 
