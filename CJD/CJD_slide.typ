@@ -293,8 +293,14 @@
 
 
 #side-by-side(gutter: 1mm, columns: (1fr, 1fr))[
-#figure(image("figures/cjd_ncnp_hp.jpeg", width: 80%))
-  - 国立精神・神経医療研究センター
+#figure(image("figures/cjd_ncnp_hp.jpeg", width: 60%))
+  
+  
+  #align(center)[
+    #text(size: 14pt)[
+  国立精神・神経医療研究センター
+  ]
+  ]
 
   #align(right)[
    #text(size: 12pt)[
@@ -303,8 +309,15 @@
   ] 
 
 ][
-  #figure(image("figures/cjd_mihara_hp.jpeg", width: 80%))
-  - 公益財団法人 脳血管研究所 美原記念病院
+  #figure(image("figures/cjd_mihara_hp.jpeg", width: 60%))
+
+  #align(center)[
+    #text(size: 14pt)[
+    公益財団法人 脳血管研究所 美原記念病院
+  ]
+  ]
+
+
   #align(right)[
    #text(size: 12pt)[
     https://mihara-ibbv.jp/hp/brain-bank/]
@@ -312,7 +325,7 @@
 ]
   - 当院だと病理解剖は不可能
   - 病理解剖あとは遺族も直接触れられない事に注意
-  - 二重の袋に入れてお返しされる
+    - 二重の袋に入れてお返しされる
   
 ]
 
