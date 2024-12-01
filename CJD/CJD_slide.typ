@@ -274,11 +274,16 @@
 ]
   
   - CJDを疑われた患者の病理で32%は違うという結果があった
-    - さらに、そのうち#text(size: 24pt, fill: red, weight: "bold")[23%(全体の6%)]はtreatableだったとされる
-    #align(right)[
-   #text(size: 12pt)[Ann Neurol. 2011;70(3):437-444.]
+    - さらに、そのうち#text(size: 24pt, fill: red, weight: "bold")[23%(全体の6%)]はtreatableだったと
+  - treatableなうち、自己免疫 > 感染症 > 悪性腫瘍で代謝性疾患は少ない
+    - 最大の鑑別疾患は自己免疫性脳炎 
+#align(right)[
+   #text(size: 12pt)[
+Ann Neurol. 2011;70(3):437-444.
+Continuum. 2016;22(2 Dementia):510-537.
+
+]
   ] 
-  - 最大の鑑別疾患は自己免疫性脳炎 
 ]
 
 
