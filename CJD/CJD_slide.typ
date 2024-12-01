@@ -241,8 +241,8 @@
 )
 
   - CJDはどこまで行っても除外診断
-  - 特に、Red flagがある場合は、CJD以外を疑う
-  
+  - 鑑別疾患は膨大だが、treatableな疾患がより重要
+  - CJD鑑別の時には以下のRed flagを探す
   
   #align(right)[
    #text(size: 12pt)[
