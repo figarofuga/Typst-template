@@ -227,7 +227,33 @@
 
 #polylux-slide[
   == 注意点！
+#set text(size: 14pt)
+#table(
+  columns: 2,
+  [*Commonな疾患*], [*稀だが治療可能な疾患*],
+  [ATDなどの神経変性疾患], [自己免疫性脳炎],
+  [せん妄と他の認知症], [代謝性/内分泌疾患(電解質異常、高NH3決勝、低血糖、尿毒症)],
+  [ウィルス性脳炎], [原発性中枢性血管炎],
+  [肝性脳症], [神経Sarcoidosis], 
+  [脳梗塞], [Lymphoma], 
+  [Wernicke脳症], [稀な感染症(PML, 感染性脳炎, Lyme病, Whipple病, 神経梅毒)], 
+  [甲状腺機能障害], [HIV関連認知症, CNS lupus, 重金属中毒, 薬物中毒, NCSE, 精神疾患など]
+)
 
+  - CJDはどこまで行っても除外診断
+  - 特に、Red flagがある場合は、CJD以外を疑う
+  
+  
+  #align(right)[
+   #text(size: 12pt)[
+    Pract Neurol. 2017;17(2):113-121.
+    ]
+  ] 
+]
+
+#polylux-slide[
+  == CJDのred flag
+  
 #align(center)[
   #set text(size: 16pt)
 #table(
@@ -241,39 +267,7 @@
   [造影MRIでの異常高信号], [中枢感染症, Lymphoma, 悪性腫瘍など]
 )
 ]
-
-  - CJDはどこまで行っても除外診断
-  - 特に、Red flagがある場合は、CJD以外を疑う
   
-  
-  #align(right)[
-   #text(size: 12pt)[
-    Pract Neurol. 2017;17(2):113-121.
-    ]
-  ] 
-  
-
-
-]
-
-#polylux-slide[
-  == CJDの鑑別の難しさ
-  
-#set text(size: 14pt)
-#table(
-  columns: 2,
-  [*Commonな疾患*], [*稀だが治療可能な疾患*],
-  [ATDなどの神経変性疾患], [自己免疫性脳炎],
-  [せん妄と他の認知症], [代謝性/内分泌疾患(電解質異常、高NH3決勝、低血糖、尿毒症)],
-  [ウィルス性脳炎], [原発性中枢性血管炎],
-  [肝性脳症], [神経Sarcoidosis], 
-  [脳梗塞], [Lymphoma], 
-  [Wernicke脳症], [稀な感染症(PML, 感染性脳炎, Lyme病, Whipple病, 神経梅毒)], 
-  [甲状腺機能障害], [HIV関連認知症, CNS lupus, 重金属中毒, 薬物中毒, NCSE, 精神疾患など]
-)
-  
-  
-
   - CJDを疑われた患者の病理で32%は違うという結果があった
     - さらに、そのうち#text(size: 24pt, fill: red, weight: "bold")[23%(全体の6%)]はtreatableだったとされる
     #align(right)[
@@ -289,6 +283,7 @@
   - 抗VGCA抗体自己免疫性脳炎が鑑別が特に難しい
   - 鑑別のポイントとして発熱や・・・・・・
   - 後はADHを産生しやすいため、低Naが特徴的
+  - とは言え、難しければ診断的治療としてPSLパルスは考慮して良い
 
 
 ]
