@@ -174,9 +174,14 @@
   == CJDの診断～髄液検査
 
 
-  #figure(image("figures/cjd_csf.jpeg", height: 50%))
+  #figure(image("figures/cjd_csf.jpeg", height: 45%))
   - 除外診断に必須
-  - 14-3-3蛋白が有名だが今は直接的にprion蛋白RT-QuICが主流
+  - 14-3-3蛋白が有名だが今は直接的に異常プリオン蛋白を検出出来る、RT-QuICが主流
+  #align(right)[
+   #text(size: 12pt)[
+      臨床神経 2013;53:1252-1254
+    ]
+  ] 
       
 ]
 
