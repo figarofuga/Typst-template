@@ -41,13 +41,13 @@
 
   = CJDの診療について
 
-  #align(horizon + center)[
-   
-    Nozomi Niimi\
-    2024/11/7
+    Nozomi Niimi
+
+    2024/12/4
     
-  ]
 ]
+
+
 
 #polylux-slide[
   == 症例
@@ -84,13 +84,30 @@
 #polylux-slide[
   == CJDの診断の道順
 
-  #figure(image("figures/cjd_diagnosis_flow.jpeg", height: 45%))
+  #figure(image("figures/cjd_diagnosis_flow.jpeg", height: 55%))
   #align(right)[
    #text(size: 12pt)[
     http://prion.umin.jp/guideline/pdf/guideline_temp_2023.pdf]]
 
-  - 急速進行性(2年以内、通常1ヶ月～1年)認知症で疑う
+  - 急速進行性(2年以内、通常1ヶ月～1年)認知症で疑う 
+]
+
+#polylux-slide[
+  == CJDの症状について
+
+  #side-by-side(gutter: 0mm, columns: (1fr, 1fr))[
+    #figure(image("figures/cjd_symptoms.jpeg", height: 45%))
+  ][
+    #figure(image("figures/cjd_symptoms_type.jpeg", height: 45%))
+  ]
+  - 典型例、非典型例があるが、最後は無言・無動になる  
   - ミオクローヌス、運動失調、視角異常、錐体(外)路症状など #lb 多彩な神経症状を呈する
+
+  #align(right)[
+   #text(size: 12pt)[
+    Pract Neurol. 2017;17(2):113-121.
+    ]
+  ] 
  
 ]
 
@@ -131,9 +148,10 @@
 
 
 #polylux-slide[
-  == CJDの診断～MRI
 
  #side-by-side(gutter: 0mm, columns: (1.6fr, 1fr))[
+
+  == CJDの診断～MRI
 
   - 単純MRIで評価
     - 造影剤MRIで他の疾患除外することもある
@@ -200,20 +218,33 @@
 
 
 #polylux-slide[
+  
+  #side-by-side(gutter: 0mm, columns: (1.3fr, 1fr))[
+  
   == CJDの診断～髄液検査 2
 
-  #figure(image("figures/nagasaki_hp.jpeg", height: 50%))
   - 長崎病院に検体を送る
+  - サーベイランスの質問票や #lb 同意を家族から得る
   - やり方が難しい
+
+  ][
+    #figure(image("figures/nagasaki_hp.jpeg", height: 60%))
+  ]
+
 ]
 
 #polylux-slide[
   == CJDの診断～髄液検査 3
 
+  #text(size: 20pt)[
+
   + メールを長崎大学に送って依頼する
   + 検査科の外注に相談して特殊な容器をもらう
-  + -20℃の保存検体。3Fの奥で発泡スチロールの容器と金槌をもらって、ドライアイスを自分で破砕して詰め込む
+  + -20℃の保存検体。3Fの奥で発泡スチロールの容器と金槌をもらって、 #lb ドライアイスを自分で破砕して詰め込む
   + 月曜日～水曜日に髄液と血漿を一緒に送る
+
+  ]
+
   - 結果は数ヶ月かかる
   - 神経内科に相談すると良い
 
@@ -274,9 +305,9 @@
 ]
   
   - CJDを疑われた患者の病理で32%は違うという結果があった
-    - さらに、そのうち#text(size: 24pt, fill: red, weight: "bold")[23%(全体の6%)]はtreatableだったと
-  - treatableなうち、自己免疫 > 感染症 > 悪性腫瘍で代謝性疾患は少ない
-    - 最大の鑑別疾患は自己免疫性脳炎 
+    - さらに、そのうち#text(size: 24pt, fill: red, weight: "bold")[23%(全体の6%)]はtreatableだった
+    - 内訳は自己免疫 > 感染症 > 悪性腫瘍 > 代謝性疾患
+    - 最大の鑑別疾患は#text(fill: red)[*自己免疫性脳炎*] 
 #align(right)[
    #text(size: 12pt)[
 Ann Neurol. 2011;70(3):437-444.
@@ -289,12 +320,24 @@ Continuum. 2016;22(2 Dementia):510-537.
 
 #polylux-slide[
   == 自己免疫性脳炎
-  
-  - 抗VGCA抗体自己免疫性脳炎が鑑別が特に難しい
-  - 鑑別のポイントとして発熱や・・・・・・
-  - 後はADHを産生しやすいため、低Naが特徴的
-  - とは言え、難しければ診断的治療としてPSLパルスは考慮して良い
+  #side-by-side(gutter: 5mm, columns: (1.7fr, 1fr))[
 
+  - 抗VGCA抗体自己免疫性脳炎が鑑別が特に難しい
+    - 辺縁系に炎症がある為、記名力低下が強い
+  - 発熱や低Naで拾い、造影MRIで #lb 異常を探す
+  - とは言え、難しければ診断的治療と #lb してPSLパルスは考慮して良い    
+
+  ][
+
+    #image("figures/rpd_etiology.jpeg", height: 80%)
+
+      #align(center)[
+    #text(size: 14pt)[
+  Nat Rev Neurol. 2022;18(6):363-376.
+    ]
+  ]
+
+  ]
 
 ]
 
