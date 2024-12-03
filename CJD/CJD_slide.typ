@@ -39,12 +39,13 @@
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
 
+
+#align(horizon + center)[
   = CJDの診療について
 
     Nozomi Niimi
-
     2024/12/4
-    
+]
 ]
 
 
