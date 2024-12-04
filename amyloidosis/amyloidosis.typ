@@ -1,32 +1,62 @@
 // Get Polylux from the official package repository
 #import "@preview/polylux:0.3.1": *
 #import "@preview/fletcher:0.5.1" as fletcher: diagram, node, edge
+#import themes.simple: *
 #import fletcher.shapes: diamond
+
 
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
-#set text(font: "Noto Serif CJK JP", size: 20pt)
 #set footnote.entry(clearance: 0.1em, gap: 0.2em)
 #show heading:set align(start + top)
+#show heading: set text(size: 28pt)
 #set align(horizon)
 
+#let lb = linebreak(justify: false)
+
+#set list(marker: ([•], [◦], [🗸]))
+#let list-counter = counter("list")
+
+#show list: set text(14pt)
+#show list: it => {
+  list-counter.step()
+
+  context {
+    set text(24pt) if list-counter.get().first() == 1
+    set text(20pt) if list-counter.get().first() == 2
+    set text(16pt) if list-counter.get().first() >= 3
+    it
+  }
+  list-counter.update(i => i - 1)
+}
+
+// for main text
+#set text(
+    lang: "ja",  // 英語しか使わない文書では"en"とする（もしくは指定しない）
+    font: ("Calibri", "Noto Serif CJK JP"),  
+    // font: (日本語文字を含まないフォント, 日本語文字を含むフォント),  となっている
+)
+
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
+
 #polylux-slide[
 
-  = Systemic amyloidosisとは
-  #align(horizon + center)[
-    
-
-    新美 望
-
-    2024/9/15
+#align(horizon + center)[
+  #text(size: 36pt, weight: "bold")[
+    Systemic amyloidosisとは
   ]
+  
+  #text(size: 24pt)[
+    Nozomi Niimi #lb
+    2024/12/4
+  ]
+
+]
 ]
 
 #polylux-slide[
     == Amyloidとは？
- - 1854年にVirchowが発見したミスフォールド前駆体タンパク質に由来する
- 線維状物質
+ - 1854年にVirchowが発見したミスフォールド前駆体 #lb タンパク質に由来する線維状物質
   #align(right)[
    #text(size: 12pt)[
     Amyloid. 2020;27(4):217-222.
@@ -43,8 +73,7 @@
   == Amyloidosisの分類
 
  - 遺伝性 vs. 後天性 / 全身性 vs. 局所
-   - 局所の代表例はCAAとか、Alzheimer型認知症とか
-→ 今回は*全身性のアミロイドーシス*に焦点を当てる
+   - 局所の代表例はCAAとか、Alzheimer型認知症とか #lb → 今回は*全身性のアミロイドーシス*に焦点を当てる
  - Amyloidの種類によっても分類可能
    - AA, AL, ATTR etcetc
  - Amyloidの種類での分類が最もわかりやすい
@@ -54,9 +83,9 @@
 #polylux-slide[
   == Amyloidの種類の重要性
 
- - 全身性/局所性も遺伝性/後天性もAmyloidの種類である程度わかる
+ - 全身性/局所性も遺伝性/後天性もAmyloidの種類で #lb ある程度わかる
  - 障害される臓器PatternもAmyloidの種類でわかる事が多い
- - 何よりも、*治療法の有無*が決定される(後述)
+ - 何よりも、#text(fill: red)[*治療法の有無*]が決定される(後述)
 
 ]
 
@@ -66,7 +95,7 @@
   == Amyloidの種類と特徴
 
   #align(center)[
-   #text(size: 24pt, fill: red)[*最重要スライド！！*]
+   #text(size: 28pt, fill: red)[*最重要スライド！！*]
   ] 
 #set text(size: 16pt)
 #table(
@@ -88,15 +117,17 @@
 #polylux-slide[
   == Amyloidosisの疫学
 
-  - イギリスの国立センターの1990-2014年までの疫学研究
+  - Underdiagnosisされているので正確な疫学は不明
+  - イギリスのAmyloidosisセンターの1990-2014年までの疫学研究
   - AL: 60%, AA: 10.5%, ATTR-wt: 8%, ATTR-v: 10%
+  - ATTRは今後増えるかもしれない
 #align(right)[
    #text(size: 12pt)[Amyloid. 2017 Sep;24(3):162-166.]
   ] 
 ]
 
 #polylux-slide[
-  == Amyloidosisの診断の難しさ
+  == 全身性Amyloidosisの診断は難しい！
 
   - 症状は非特異的な事が多い
   - そのため、発症から診断までに時間がかかることが知られている
@@ -123,11 +154,11 @@
   #diagram(
     node-stroke: 1pt, 
     edge-stroke: 1pt,
-    node((0, 0), [#text(size: 16pt)[Amyloidosisを疑う]], corner-radius: 2pt),
+    node((0, 0), [#text(size: 20pt)[Amyloidosisを疑う]], corner-radius: 2pt),
     edge("-|>"), 
-    node((1.0, 0), [#text(size: 16pt)[Clueとなる追加情報を集める]], corner-radius: 2pt), 
+    node((1.0, 0), [#text(size: 20pt)[Clueとなる追加情報\ を集める]], corner-radius: 2pt), 
     edge("-|>"),
-    node((2.0, 0), [#text(size: 16pt)[AmyloidosisのTyping:\ 侵襲的検査]], corner-radius: 2pt)
+    node((2.0, 0), [#text(size: 20pt)[AmyloidosisのTyping:\ 侵襲的検査]], corner-radius: 2pt)
     )
   
   - Step by stepで考える
@@ -143,7 +174,7 @@
     + HFpEF(特に、強いLVHを伴う)
     + 肝脾腫
     + Gloves and stockings patternのPolyneuropathy
-    + MGUS患者の妙な症状
+    + MGUS患者の消耗性の症状
 
 #align(right)[
    #text(size: 12pt)[
@@ -155,7 +186,7 @@
 #polylux-slide[
   == ゲシュタルトを覚えよう
 
-  - 出来れば、AA, AL, ATTR-wtの3つはゲシュタルトを覚えておくと良い
+  - 出来れば、AA, AL, ATTR-wtの3つはゲシュタルトを #lb 覚えておくと良い
   - 疑った時に問診・身体所見を追加
 
   
@@ -180,11 +211,10 @@
 
 #side-by-side(gutter: 1mm, columns: (1.5fr, 1fr))[
   - 診断時の年齢は50-70歳が殆ど
-  - 心不全入院: 特にLVHを伴うHFpEF (60-75%)
-  - 腎機能低下: 著名な蛋白尿 (50-70%)
-  - 神経障害: 両手足のしびれ、両手の手根管症候群、起立性低血圧による失神・めまい (22%)
-
-  - これらをみた時には巨舌(10-17%)や眼窩周囲の紫斑(15%)を見逃さないようにする
+  - 以下の症状の時に巨舌(10-17%)や眼窩周囲の紫斑(15%)を探す
+    - 心不全入院: 特にLVHを伴うHFpEF (60-75%)
+    - 腎機能低下: 著名な蛋白尿 (50-70%)
+    - 神経障害: 両手足のしびれ、#lb 両側の手根管症候群、 #lb 起立性低血圧による失神・めまい (22%)
 
     // + 巨舌: 10-17%
     // + 眼窩周囲の紫斑: 15%
@@ -195,7 +225,7 @@
     // + 腸管: 10-17%
 
   #align(right)[
-   #text(size: 12pt)[DynaMed. Amyloidosis. EBSCO Information Services. Accessed September 16th, 2024]
+   #text(size: 12pt)[DynaMed. Amyloidosis. EBSCO Information Services. #lb Accessed September 16th, 2024]
   ] 
 
 ][
@@ -210,7 +240,7 @@
 #polylux-slide[
   == AL amyloidosisの疾患シナリオ②
 
-  - 元々MGUSなどの基礎疾患がわかっている患者が、倦怠感や浮腫、体重減少などの非特異的な症状で来院
+  - 元々MGUSなどの基礎疾患がわかっている患者が、倦怠感や #lb 浮腫、体重減少などの非特異的な症状で来院
   - 検査で心不全や腎機能低下、臓器腫大が判明
   
   #align(right)[
@@ -225,7 +255,7 @@
   - 高齢者のHFpEFでエコーをしたら特徴的な所見
     - 後壁の心室壁厚 > 15mm, Granular sparkiling pattern、ECGで低電位など
   - 神経: 手根管症候群が30-50%、脊柱管狭窄症、DSP
-  - 高齢者の上腕二頭筋腱断裂, 両側手根管症候群のようなやや違和感があるStory
+  - 高齢者の上腕二頭筋腱断裂, 両側手根管症候群のような #lb やや違和感があるStory
   - 腎疾患は稀
 
   #align(right)[
@@ -240,7 +270,7 @@
   - 心Amyloidosis → AL, ATTR amyloidosis
   - Polyneuropathy → AL, ATTR amyloidosis
 
-  #align(center)[#text(size: 24pt, fill: red)[*最も重要なのは心Amyloidosis*]]
+  #align(center)[#text(size: 32pt, fill: red, weight: "bold")[*最も重要なのは心Amyloidosis*]]
   
 ]
 
@@ -269,9 +299,9 @@
     #figure(image("figures/ecg_table.jpeg", width: 100%))
   ]
   
-  + AF
-  + 壁肥厚があるにもかかわらず、心電図が低電位
-  + QS pattern(偽梗塞パターン)
+  - AF
+  - 壁肥厚があるにもかかわらず、心電図が低電位
+  - QS pattern(偽梗塞パターン)
 
 ]
 
@@ -279,23 +309,29 @@
   == 心Amyloidosisの診断
   
   - 侵襲性と値段の問題から、まずはTTEが使われる事が多い
-  - CMR(ややハードルは高いが)もかなり精度が良い
-  - TTEで疑う→CMR→更なる検査という順番が現実的
+  - CMR(当院でややハードルは高いが)もかなり精度が良い
+  - TTE→CMR→更なる検査という順番が現実的
   - CMRはCVICという会社でもやってくれる(飯田橋だがオススメ)
 
 ]
 
 
-#polylux-slide[
-  == TTEの特徴
+#slide[
   
-  #figure(image("figures/amyloid_tte.jpeg", height: 40%))
+    #side-by-side(gutter: 1mm, columns: (1.2fr, 1fr))[
+
+    == TTEの特徴
 
   - 心筋壁/乳頭筋/弁/中隔の肥厚  
-    - 中隔/後壁比が< 1.3，
-    - 肥厚心筋の “granular sparkling”
+  - 中隔/後壁比が< 1.3，
+  - 肥厚心筋の “granular sparkling”
   - 心室中隔/左室後壁の低収縮
-  - 心電図上の低電位と心室中隔肥厚(> 1.98 cm)の組み合わせで，感度 72%，特異度 91%
+  - 心電図上の低電位と心室中隔肥厚 #lb (> 1.98 cm)の組み合わせで， #lb 感度 72%，特異度 91%
+    
+  ][
+    #figure(image("figures/amyloid_tte.jpeg", height: 60%))
+  ]
+  
   
 ]
 
@@ -326,20 +362,25 @@
     #align(right)[
    #text(size: 12pt)[JAMA. 2024;331(9):778-791.]
 ] 
-  - ATTR: ピロリン酸骨(Tc99m)シンチを使う事で、非侵襲的に診断可能
+  - ATTR: *PyPシンチ(Tc99m)*を使う事で、非侵襲的に診断可能
     - Monoclonal蛋白陰性→PyPシンチ陽性 = ATTR amyloidosis確定診断
 
 ]
 
 
 #polylux-slide[
-  == PyPシンチの特徴
- #figure(image("figures/pyp_scinti.jpeg", height: 50%))
-  - 縦隔との比較が重要
-  - 陽性の場合はATTR amyloidosisの可能性が高い
-    - ATTR-CAの診断能は感度58-99%，特異度79-100%でALを除外したら一発診断可能
+  == PyPシンチ
 
+  #side-by-side(gutter: 1mm, columns: (1.4fr, 1fr))[
+  
+  - 陽性の場合はATTR amyloidosisを示唆する
+  - ATTR-CAの診断能は #lb 感度58-99%，特異度79-100%
+  - AL amyloidosisでも陽性になるので注意！
+    - 採血・検尿でALを除外したら #lb 一発診断可能
+  ][
+    #figure(image("figures/pyp_scinti.jpeg", height: 80%))
 
+]
 ]
 
 #polylux-slide[
@@ -352,24 +393,29 @@
     edge((0, 0), (1.0, 0), "-|>", [#text(size: 12pt)[検査]]), 
     node((1.0, 0), [#text(size: 12pt)[monoclonal蛋白検査]], corner-radius: 2pt), 
     edge((1.0, 0), (1.0, 0.6), "-|>", [#text(size: 12pt)[陽性]]),
-    node((1.0, 0.6), [#text(size: 12pt)[生検]]),
+    node((1.0, 0.6), [#text(size: 12pt)[血液内科コンサルト・生検]]),
     edge((1.0, 0), (2.0, 0),"-|>", [#text(size: 12pt)[陰性]]),
-    node((2.0, 0), [#text(size: 12pt)[PyPシンチ]], corner-radius: 2pt),
+    node((2.0, 0), [#text(size: 16pt)[PyPシンチ]], corner-radius: 2pt),
     edge((2.0, 0), (3.0, 0), "-|>", [#text(size: 12pt)[陰性]]),
-    node((3.0, 0), [#text(size: 12pt)[心アミロイドーシスらしくない]], corner-radius: 2pt), 
+    node((3.0, 0), [#text(size: 16pt)[心アミロイドーシス\ らしくない]], corner-radius: 2pt), 
     edge((2.0, 0), (2.0, 0.6), "-|>", [#text(size: 12pt)[陽性]]),
-    node((2.0, 0.6), [#text(size: 12pt)[ATTR-CM]], corner-radius: 2pt)
+    node((2.0, 0.6), [#text(size: 16pt)[ATTR-CM]], corner-radius: 2pt)
     )
+  
+  #text(size: 20pt)[
 
-  - 基本はALを採血・検尿で否定をした後にPyPシンチでATTRを探す
   - 採血・検尿が陰性→PyPシンチ陽性→ATTR amyloidosis確定
-  - 採血・検尿でM蛋白が陽性になったら→Amyloidの組織生検は必須
-    - MGUSは70歳以上で5%、ATTR-wtのCAのうち10-40%はAL amyloidosisの検査で異常が出る為
+  - 採血・検尿でM蛋白が陽性→Amyloidの組織生検は必須
+    - MGUSは70歳以上で5%、ATTR-wtのCAのうち10-40%は #lb AL amyloidosisの検査で異常が出る為
     - 局所麻酔下での脂肪織の生検が非侵襲的でよい
       - 感度 ATTR-v: 65-85%, AL: 60-80%, ATTR-wt:14%
+      ]
+
     #align(right)[
    #text(size: 12pt)[JAMA. 2024;331(9):778-791.]
 ] 
+
+
 
 ]
 #polylux-slide[
@@ -389,8 +435,8 @@
 
   - 治療は専門科に任せる  
   - AL amyloidosisは血液内科
-  - 慶應の循環器内科に紹介
-    - Tafosmideは慶應でやっている
+  - ATTRは慶應の循環器内科に紹介
+    - Tafosmideをやっている
   - ATTRがwtかv(遺伝性か孤発性か)は家族歴を確認するが結局は遺伝子検査が必須
     - 熊本と長野に集積
 
