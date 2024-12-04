@@ -1,7 +1,9 @@
 // Get Polylux from the official package repository
 #import "@preview/polylux:0.3.1": *
 #import "@preview/fletcher:0.5.1" as fletcher: diagram, node, edge
+#import themes.simple: *
 #import fletcher.shapes: diamond
+
 
 // Make the paper dimensions fit for a presentation and the text larger
 #set page(paper: "presentation-16-9")
@@ -39,12 +41,16 @@
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
 #polylux-slide[
 
-
 #align(horizon + center)[
-  = CJDの診療について
-
-    Nozomi Niimi
+  #text(size: 36pt, weight: "bold")[
+    Creutzfeldt-Jakob病(CJD)の診療について
+  ]
+  
+  #text(size: 24pt)[
+    Nozomi Niimi #lb
     2024/12/4
+  ]
+
 ]
 ]
 
@@ -97,18 +103,14 @@
   == CJDの症状について
 
   #side-by-side(gutter: 0mm, columns: (1fr, 1fr))[
-    #figure(image("figures/cjd_symptoms.jpeg", height: 45%))
+    #figure(image("figures/cjd_symptoms.jpeg", height: 50%))
   ][
-    #figure(image("figures/cjd_symptoms_type.jpeg", height: 45%))
+    #figure(image("figures/cjd_symptoms_type.jpeg", height: 50%))
   ]
   - 典型例、非典型例があるが、最後は無言・無動になる  
-  - ミオクローヌス、運動失調、視角異常、錐体(外)路症状など #lb 多彩な神経症状を呈する
-
-  #align(right)[
-   #text(size: 12pt)[
+  - ミオクローヌス、運動失調、視角異常、錐体(外)路症状など #lb 多彩な神経症状を呈する  #h(1fr) #text(size: 12pt)[
     Pract Neurol. 2017;17(2):113-121.
     ]
-  ] 
  
 ]
 
@@ -148,7 +150,7 @@
 ]
 
 
-#polylux-slide[
+#slide[
 
  #side-by-side(gutter: 0mm, columns: (1.6fr, 1fr))[
 
@@ -168,7 +170,7 @@
 #align(right)[
    #text(size: 12pt)[
     
-  Brian S Appleby, MD, Mark L Cohen, MD. Creutzfeldt-jakob disease. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed November 24th, 2024. https://www.uptodate.com/contents/treatment-of-adrenal-insufficiency-in-adults?source=mostViewed_widget
+  Brian S Appleby, MD, Mark L Cohen, MD. Creutzfeldt-jakob disease. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed November 24th, 2024. https://www.uptodate.com/contents/creutzfeldt-jakob-disease?source=mostViewed_widget
     ]]
 ]
 
@@ -208,7 +210,7 @@
   == 髄液検査は危険じゃない？
 
   - 脳脊髄液は低感染性だが、腰椎穿刺の時にはちゃんと #lb フェイスマスクもつける
-  - 疑いだけで、検査を差し控えまでは不要だが、maximal precautionで最低限の回数にする  
+  - 疑いだけで、検査を差し控えまでは不要だが、 #lb maximal precautionで最低限の回数にする  
   
 #align(right)[
    #text(size: 12pt)[
@@ -218,9 +220,9 @@
 ]
 
 
-#polylux-slide[
+#slide[
   
-  #side-by-side(gutter: 0mm, columns: (1.3fr, 1fr))[
+  #side-by-side(gutter: 0mm, columns: (1fr, 1fr))[
   
   == CJDの診断～髄液検査 2
 
@@ -229,7 +231,7 @@
   - やり方が難しい
 
   ][
-    #figure(image("figures/nagasaki_hp.jpeg", height: 60%))
+    #figure(image("figures/nagasaki_hp.jpeg", height: 80%))
   ]
 
 ]
@@ -237,7 +239,7 @@
 #polylux-slide[
   == CJDの診断～髄液検査 3
 
-  #text(size: 20pt)[
+  #text(size: 24pt)[
 
   + メールを長崎大学に送って依頼する
   + 検査科の外注に相談して特殊な容器をもらう
@@ -323,11 +325,14 @@ Continuum. 2016;22(2 Dementia):510-537.
   == 自己免疫性脳炎
   #side-by-side(gutter: 5mm, columns: (1.7fr, 1fr))[
 
-  - 抗VGCA抗体自己免疫性脳炎が鑑別が特に難しい
+  - 抗VGCA抗体関連脳炎や橋本脳症の鑑別が特に難しい
     - 辺縁系に炎症がある為、記名力低下が強い
   - 発熱や低Naで拾い、造影MRIで #lb 異常を探す
   - とは言え、難しければ診断的治療と #lb してPSLパルスは考慮して良い    
-
+#align(right)[
+   #text(size: 12pt)[
+BRAIN and NERVE 62(4)：339-345, 2010
+]]
   ][
 
     #image("figures/rpd_etiology.jpeg", height: 80%)
