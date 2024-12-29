@@ -163,7 +163,7 @@
   - 兵庫医科大学病院アレルギー・リウマチ内科
   - 川崎医科大学附属病院リウマチ・膠原病科
   - 九州大学医学部 小児科
-  - 久留米大学医学部　小児科学教室
+  - 久留米大学医学部 小児科学教室
 
 https://genetics.qlife.jp/diseases/familial-mediterranean-fever
 

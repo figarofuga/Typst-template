@@ -67,18 +67,16 @@
 ]
 
 #polylux-slide[
-  == CJDとは
+  == 代替栄養について
 
-  - Creutzfeldt-Jakob病
-  - Prion病の一つ
-  - 有病率は1～2/100万人とされる希少疾患
-    - 特発性多中心性キャッスルマン病と同じくらいの発症率
-  - 実は伝染病として5類感染症に指定されている
+  - 経鼻胃管
+  - 胃瘻
+  - 中心静脈カテーテル
 
 ]
 
 #polylux-slide[
-  == CJDの分類と疫学
+  == 予後について
 
   #figure(image("figures/cjd_piechart.jpeg", height: 70%))
   
