@@ -11,6 +11,10 @@
 #set align(horizon)
 
 #let lb = linebreak(justify: false)
+#let refs(body) = {
+  set text(size: 12pt)
+  align(right, body)
+}
 
 #set list(marker: ([•], [◦], [🗸]))
 #let list-counter = counter("list")
@@ -73,7 +77,7 @@
   
   - トルコ人に多い(シルクロード)
   - 2009年の研究だと日本人で約500人で男女差はない
-(https://www.nanbyou.or.jp/entry/4447)
+#refs[https://www.nanbyou.or.jp/entry/4447]
 
   - 潜在的にはもっとたくさんいると思われている
 
@@ -93,11 +97,7 @@
     + 筋痛
     + 皮膚症状
 
-
-#align(right)[
-   #text(size: 12pt)[
-Curr Opin Rheumatol. 2016;28(5):523-529.
-    ]]
+#refs[Curr Opin Rheumatol. 2016;28(5):523-529.]
 
   ]
 
@@ -186,7 +186,7 @@ Curr Opin Rheumatol. 2016;28(5):523-529.
   - 九州大学医学部 小児科
   - 久留米大学医学部 小児科学教室
 
-https://genetics.qlife.jp/diseases/familial-mediterranean-fever
+#refs[https://genetics.qlife.jp/diseases/familial-mediterranean-fever]
 
   ]
 
