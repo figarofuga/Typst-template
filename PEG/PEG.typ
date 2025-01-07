@@ -13,6 +13,10 @@
 #set align(horizon)
 
 #let lb = linebreak(justify: false)
+#let refs(body) = {
+  set text(size: 12pt)
+  align(right, body)
+}
 
 #set list(marker: ([•], [◦], [🗸]))
 #let list-counter = counter("list")
