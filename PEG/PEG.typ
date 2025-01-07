@@ -80,44 +80,36 @@
 ]
 
 #polylux-slide[
-  == 予後について
+  == 代替栄養の予後について
 
-  #figure(image("figures/cjd_piechart.jpeg", height: 70%))
+  // #figure(image("figures/cjd_piechart.jpeg", height: 70%))
   
   - 日本では3/4以上が孤発性
 
 ]
 
-
 #polylux-slide[
-  == CJDの診断の道順
-
-  #figure(image("figures/cjd_diagnosis_flow.jpeg", height: 55%))
-  #align(right)[
-   #text(size: 12pt)[
-    http://prion.umin.jp/guideline/pdf/guideline_temp_2023.pdf]]
-
-  - 急速進行性(2年以内、通常1ヶ月～1年)認知症で疑う 
-]
-
-#polylux-slide[
-  == CJDの症状について
+  == 胃瘻のメリットとデメリット
 
   #side-by-side(gutter: 0mm, columns: (1fr, 1fr))[
-    #figure(image("figures/cjd_symptoms.jpeg", height: 50%))
+
+    = メリット
+    - 代替栄養が可能
+    - 介護の負担軽減
+    - 経口摂取が困難な患者に対して有効
+
   ][
-    #figure(image("figures/cjd_symptoms_type.jpeg", height: 50%))
+    = デメリット
+    - 小さいとはOpe
+    - 逆流性食道炎
+    - 胃瘻周囲の皮膚炎
+    - 胃瘻閉塞
   ]
-  - 典型例、非典型例があるが、最後は無言・無動になる  
-  - ミオクローヌス、運動失調、視角異常、錐体(外)路症状など #lb 多彩な神経症状を呈する  #h(1fr) #text(size: 12pt)[
-    Pract Neurol. 2017;17(2):113-121.
-    ]
- 
-]
+  ]
 
 
 #polylux-slide[
-  == CJDで必要な問診
+  == 胃瘻の種類
 
   - プリオン病サーベイランスの項目より
     - 食事の嗜好
@@ -138,11 +130,11 @@
 ]
   
 
+
 #polylux-slide[
-  == CJDの診断
+  == 胃瘻の作り方
 
 
-#figure(image("figures/cjd_diagnosis.jpeg", height: 50%))
   - 本来は脳生検による組織診が必要
     - しかし、それだと亡くなるまで診断が不可能
   - 最近だと、以下の検査が組み合わせて行われる
@@ -150,244 +142,84 @@
   
 ]
 
-
-#slide[
-
- #side-by-side(gutter: 0mm, columns: (1.6fr, 1fr))[
-
-  == CJDの診断～MRI
-
-  - 単純MRIで評価
-    - 造影剤MRIで他の疾患除外することもある
-  - DWIで大脳皮質の高信号 #lb (Cortical ribboning)や線条体の高信号
-    - 感度83-94%, 特異度72-95%
-
-][
-  #figure(image("figures/cjd_mri.jpeg", height: 60%))
+#polylux-slide[
+  == 胃瘻の合併症
 
 
+  - 全国の・・・・・・
+  
 ]
 
-#align(right)[
-   #text(size: 12pt)[
-    
-  Brian S Appleby, MD, Mark L Cohen, MD. Creutzfeldt-jakob disease. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed November 24th, 2024. https://www.uptodate.com/contents/creutzfeldt-jakob-disease?source=mostViewed_widget
-    ]]
-]
 
 
 #polylux-slide[
-  == CJDの診断～脳波
+  == 胃瘻作成後の注意点
 
-  #figure(image("figures/cjd_eeg.jpeg", height: 40%))
-  - 1-2Hzの定期的な棘波(2相や3相)の複合波がsCJDを示唆する
-    - 感度67%, 特異度86%
-  - 脳炎や代謝、中毒疾患などを除外するのにも有用
-  #align(right)[
-   #text(size: 12pt)[
-    DynaMed. Creutzfeldt-Jakob Disease. EBSCO Information Services. Accessed 2024年11月26日. https://www.dynamed.com/condition/creutzfeldt-jakob-disease
-    ]
-  ] 
+  - 省略
   
 ]
 
 
 #polylux-slide[
-  == CJDの診断～髄液検査
+  == 代替栄養の予後について
 
-
-  #figure(image("figures/cjd_csf.jpeg", height: 45%))
-  - 除外診断に必須
-  - 14-3-3蛋白が有名だが今は直接的に異常プリオン蛋白を検出出来る、RT-QuICが主流
-  #align(right)[
-   #text(size: 12pt)[
-      臨床神経 2013;53:1252-1254
-    ]
-  ] 
-      
-]
-
-#polylux-slide[
-  == 髄液検査は危険じゃない？
-
-  - 脳脊髄液は低感染性だが、腰椎穿刺の時にはちゃんと #lb フェイスマスクもつける
-  - 疑いだけで、検査を差し控えまでは不要だが、 #lb maximal precautionで最低限の回数にする  
+  // #figure(image("figures/cjd_piechart.jpeg", height: 70%))
   
-#align(right)[
-   #text(size: 12pt)[
-    http://prion.umin.jp/guideline/cjd_2020.pdf
-    ]
-  ] 
-]
-
-
-#slide[
-  
-  #side-by-side(gutter: 0mm, columns: (1fr, 1fr))[
-  
-  == CJDの診断～髄液検査 2
-
-  - 長崎病院に検体を送る
-  - サーベイランスの質問票や #lb 同意を家族から得る
-  - やり方が難しい
-
-  ][
-    #figure(image("figures/nagasaki_hp.jpeg", height: 80%))
-  ]
+  - 日本では……
 
 ]
 
 #polylux-slide[
-  == CJDの診断～髄液検査 3
+  == それでも良い？
 
-  #text(size: 24pt)[
-
-  + メールを長崎大学に送って依頼する
-  + 検査科の外注に相談して特殊な容器をもらう
-  + -20℃の保存検体。3Fの奥で発泡スチロールの容器と金槌をもらって、 #lb ドライアイスを自分で破砕して詰め込む
-  + 月曜日～水曜日に髄液と血漿を一緒に送る
-
-  ]
-
-  - 結果は数ヶ月かかる
-  - 神経内科に相談すると良い
+  - ヘテロな集団
+  - 若年の脳梗塞患者や喉頭癌術後の患者(あとで抜去する人)と認知症終末期で一緒じゃないでしょ！
 
 ]
 
 
 #polylux-slide[
-  == 診断したら・・・・・・
+  == 認知症終末期に関しては
 
-  - 5類感染症なので、保健所に報告
-  - サーベイランスで聞いた項目を聞く
-  - 一発でOKにならないので保健所から電話が来ても気にしない
-
+  - アメリカでは・・・・・・
+  - Cascade study
   
-]
-
-#polylux-slide[
-  == 注意点！
-#set text(size: 14pt)
-#table(
-  columns: 2,
-  [*Commonな疾患*], [*稀だが治療可能な疾患*],
-  [ATDなどの神経変性疾患], [自己免疫性脳炎],
-  [せん妄と他の認知症], [代謝性/内分泌疾患(電解質異常、高NH3決勝、低血糖、尿毒症)],
-  [ウィルス性脳炎], [原発性中枢性血管炎],
-  [肝性脳症], [神経Sarcoidosis], 
-  [脳梗塞], [Lymphoma], 
-  [Wernicke脳症], [稀な感染症(PML, 感染性脳炎, Lyme病, Whipple病, 神経梅毒)], 
-  [甲状腺機能障害], [HIV関連認知症, CNS lupus, 重金属中毒, 薬物中毒, NCSE, 精神疾患など]
-)
-
-  - CJDはどこまで行っても除外診断
-  - 鑑別疾患は膨大だが、treatableな疾患がより重要
-  - CJD鑑別の時には以下のRed flagを探す
-  
-  #align(right)[
-   #text(size: 12pt)[
-    Pract Neurol. 2017;17(2):113-121.
-    ]
-  ] 
-]
-
-#polylux-slide[
-  == CJDのred flag
-  
-#align(center)[
-  #set text(size: 16pt)
-#table(
-  columns: 2,
-  [*Red flag*], [*鑑別診断*],
-  [発熱], [中枢感染症, Lymphoma],
-  [痙攣], [中枢感染症、自己免疫性脳炎、悪性腫瘍など],
-  [低Na血症], [VGKC抗体関連脳炎],
-  [顔面の異常運動], [NMDA-R脳炎、中枢Whipple病], 
-  [CSFの細胞数増多], [中枢感染症, Lymphoma, 悪性腫瘍など], 
-  [造影MRIでの異常高信号], [中枢感染症, Lymphoma, 悪性腫瘍など]
-)
-]
-  
-  - CJDを疑われた患者の病理で32%は違うという結果があった
-    - さらに、そのうち#text(size: 24pt, fill: red, weight: "bold")[23%(全体の6%)]はtreatableだった
-    - 内訳は自己免疫 > 感染症 > 悪性腫瘍 > 代謝性疾患
-    - 最大の鑑別疾患は#text(fill: red)[*自己免疫性脳炎*] 
-#align(right)[
-   #text(size: 12pt)[
-Ann Neurol. 2011;70(3):437-444.
-Continuum. 2016;22(2 Dementia):510-537.
-
-]
-  ] 
 ]
 
 
 #polylux-slide[
-  == 自己免疫性脳炎
-  #side-by-side(gutter: 5mm, columns: (1.7fr, 1fr))[
+  == その結果
 
-  - 抗VGCA抗体関連脳炎や橋本脳症の鑑別が特に難しい
-    - 辺縁系に炎症がある為、記名力低下が強い
-  - 発熱や低Naで拾い、造影MRIで #lb 異常を探す
-  - とは言え、難しければ診断的治療と #lb してPSLパルスは考慮して良い    
-#align(right)[
-   #text(size: 12pt)[
-BRAIN and NERVE 62(4)：339-345, 2010
-]]
-  ][
-
-    #image("figures/rpd_etiology.jpeg", height: 80%)
-
-      #align(center)[
-    #text(size: 14pt)[
-  Nat Rev Neurol. 2022;18(6):363-376.
-    ]
-  ]
-
-  ]
-
+  - 2009年のAGAの提唱
+  - To PEG or not to PEG
+  
 ]
 
 #polylux-slide[
-  == 病理解剖
+  == 日本では？
 
-
-#side-by-side(gutter: 1mm, columns: (1fr, 1fr))[
-#figure(image("figures/cjd_ncnp_hp.jpeg", width: 60%))
-  
-  
-  #align(center)[
-    #text(size: 14pt)[
-  国立精神・神経医療研究センター
-  ]
-  ]
-
-  #align(right)[
-   #text(size: 12pt)[
-    https://brain-bank.ncnp.go.jp/
-   ]
-  ] 
-
-][
-  #figure(image("figures/cjd_mihara_hp.jpeg", width: 60%))
-
-  #align(center)[
-    #text(size: 14pt)[
-    公益財団法人 脳血管研究所 美原記念病院
-  ]
-  ]
-
-
-  #align(right)[
-   #text(size: 12pt)[
-    https://mihara-ibbv.jp/hp/brain-bank/]
-  ] 
-]
-  - 当院だと病理解剖は不可能
-  - 病理解剖あとは遺族も直接触れられない事に注意
-    - 二重の袋に入れてお返しされる
+  - ？？
+  - やっぱり予後は悪い
   
 ]
+
+#polylux-slide[
+  == ただし
+
+  - RCTではないので因果は言えない
+  - ばらつきが大きいことに注意
+  
+]
+
+
+#polylux-slide[
+  == どうやって胃瘻を決める？
+
+  - 厚生労働省のガイドライン
+ 
+ ]
+
+
 
 #polylux-slide[
   == Take home message
