@@ -92,7 +92,18 @@
 #polylux-slide[
   = 膠原病の考え方
 
+  #figure(image("figures/jikoensho_jikomenneki.jpeg", height: 50%))
+
   - 自己炎症 vs. 自己免疫
+
+]
+
+#polylux-slide[
+  = 自己免疫疾患と自己炎症性疾患
+
+    #figure(image("figures/jikoensho_spect.jpeg", height: 50%))
+
+  - 自己免疫も自己炎症もスペクトラム
   - 境界領域の疾患が存在する
     - 簡単にいうとコルヒチンが効く疾患は全部自己炎症より
     + 再発性心外膜炎
