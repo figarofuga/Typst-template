@@ -1,8 +1,24 @@
 // Get Polylux from the official package repository
 #import "@preview/touying:0.5.5": *
 #import "@preview/fletcher:0.5.1" as fletcher: diagram, node, edge
-#import themes.simple: *
-#show: simple-theme.with(aspect-ratio: "16-9")
+#import themes.university: *
+
+#import "@preview/numbly:0.1.0": numbly
+
+#show: university-theme.with(
+  aspect-ratio: "16-9",
+  config-info(
+    title: [Title],
+    subtitle: [Subtitle],
+    author: [Authors],
+    date: datetime.today(),
+    institution: [Institution],
+    logo: emoji.school,
+  ),
+)
+
+#set heading(numbering: numbly("{1}.", default: "1.1"))
+
 #import fletcher.shapes: diamond
 
 
@@ -38,6 +54,8 @@
 )
 
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
+#title-slide(authors: ([Nozomi Niimi], [Author B]))
+
 
 = Title
 
