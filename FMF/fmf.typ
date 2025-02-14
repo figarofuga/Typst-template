@@ -7,26 +7,26 @@
 #set page(paper: "presentation-16-9")
 #set footnote.entry(clearance: 0.1em, gap: 0.2em)
 #show heading:set align(start + top)
-#show heading: set text(size: 28pt)
+#show heading: set text(size: 24pt)
 #set align(horizon)
 
 #let lb = linebreak(justify: false)
 #let refs(body) = {
-  set text(size: 12pt)
+  set text(size: 8pt)
   align(right, body)
 }
 
 #set list(marker: ([•], [◦], [🗸]))
 #let list-counter = counter("list")
 
-#show list: set text(14pt)
+#show list: set text(12pt)
 #show list: it => {
   list-counter.step()
 
   context {
-    set text(24pt) if list-counter.get().first() == 1
-    set text(20pt) if list-counter.get().first() == 2
-    set text(16pt) if list-counter.get().first() >= 3
+    set text(20pt) if list-counter.get().first() == 1
+    set text(16pt) if list-counter.get().first() == 2
+    set text(12pt) if list-counter.get().first() >= 3
     it
   }
   list-counter.update(i => i - 1)
@@ -78,14 +78,12 @@
 #polylux-slide[
   = 自己免疫疾患
   
-  #figure(image("figures/autoinflammation.png", height: 55%))
+  #figure(image("figures/autoinflammation.png", height: 45%))
   - 好中球による炎症反応
     - 抗原暴露によるリンパ球による獲得免疫ではない
-  - PAMs, DAMPs等の元々実際にある刺激から始まる
+  - PAMs, DAMPsの刺激から始まる
   - 成人発症でも良い数少ない疾患(他にはAOSD, TRAPS, PPFA, VEXAS症候群)
-  #refs[高岸勝繁(2024).ホスピタリストのための内科診療フローチャート--専門的対応が求められる疾患の診療の流れとエビデンス 第3版. シーニュ]
-  ]
-  - 家族性地中海熱は常染色体劣性（潜性）遺伝形式で遺伝
+  #refs[高岸勝繁(2024).ホスピタリストのための内科診療フローチャート #lb --専門的対応が求められる疾患の診療の流れとエビデンス 第3版. シーニュ]
 
   ]
 
@@ -101,9 +99,9 @@
 #polylux-slide[
   = 自己免疫疾患と自己炎症性疾患
 
-    #figure(image("figures/jikoensho_spect.jpeg", height: 50%))
 
-  - 自己免疫も自己炎症もスペクトラム
+  #side-by-side(gutter: 0mm, columns: (1fr, 1fr))[
+    - 自己免疫も自己炎症もスペクトラム
   - 境界領域の疾患が存在する
     - 簡単にいうとコルヒチンが効く疾患は全部自己炎症より
     + 再発性心外膜炎
@@ -111,6 +109,11 @@
     + ベーチェット病
     + SpA
     + 壊疽性膿皮症
+  ][
+     #figure(image("figures/jikoensho_spect.jpeg", height: 50%))
+  ] 
+
+  
   
    ]
 
@@ -133,7 +136,7 @@
   - 中核症状として、高熱が半日〜3日間持続
   - ある程度決まった間隔(4週間が最多だが個人差あり)での発作
     - ストレスや感染症、月経などに影響される。期間の長さは個人差がある
-  - それ以外に複数の症状がある
+  - 発熱以外に複数の症状がある
     + 腹痛
     + 関節炎
     + 胸膜炎
@@ -148,13 +151,22 @@
   #polylux-slide[
   = よくわからない！
 
+
+   #figure(image("figures/fmf_symp_jp.jpeg", height: 50%))
+
   - 高熱が半日〜3日間持続
   - ある程度決まった間隔(4週間が最多だが個人差あり)での発作
     - ストレスや感染症、月経などに影響される。期間の長さは個人差がある
   - 発作間は症状がないのが特徴
   - 急性腹症、胸膜炎などの漿膜炎や関節炎などが特徴的
 
-  #align(center)[#text(size: 28pt)[イメージは]#text(size: 28pt, fill: red)[*繰り返す虫垂炎*]]
+
+  ]
+
+    #polylux-slide[
+  = FMFを一言で言うなら
+
+  #align(center)[#text(size: 28pt)[イメージは]#text(size: 28pt, fill: red)[*定期的な発熱 + 繰り返す虫垂炎*]]
 
   ]
 
@@ -196,7 +208,7 @@
 
   - 典型例は知識があれば診断は簡単
   - 一方で、基準を満たさない、"FMF崩れ"みたいな症状が多いと言われている
-  - 大まかなゲシュタルトとして若年者の「繰り返す発熱と腹痛(+高CRP)」を忘れない
+  - 大まかなゲシュタルトとして若年者の #lb 「繰り返す発熱と腹痛(+高CRP)」を忘れない
 
   ]
 
@@ -206,7 +218,7 @@
   - 遺伝子検査は必須ではない
     - 遺伝子異常があっても発症しない事も多い(浸透率が高くない)
     - 逆に遺伝子異常がない人もFMFを発症することもある
-  - 常に**臨床診断**
+  - 常に*臨床診断*
   - 特に重要なのは*コルヒチンの反応性* 
 
   ]
@@ -231,21 +243,26 @@
 
   #polylux-slide[
   = 遺伝子検査の方法
-  
-  - 東京女子医大学に依頼
 
-  - 東北大学病院 血液内科・リウマチ膠原病内科
+  #side-by-side()[
+
+  - 東京女子医大学に依頼
+  - 東北大学病院 血液内科・ #lb リウマチ膠原病内科
   - 筑波大学医学医療系小児科
-  - 東京医科歯科大学膠原病・リウマチ先端治療センター
-  - 東京女子医科大学膠原病リウマチ痛風センター
+  - 東京医科歯科大学膠原病・リウマチ #lb 先端治療センター
+  - 東京女子医科大学膠原病リウマチ #lb 痛風センター
   - 国立成育医療研究センター免疫科
-  - 信州大学医学部附属病院脳神経内科／リウマチ・膠原病内科
-  - 岐阜大学医学部附属病院小児科
-  - 藤田医科大学病院臨床遺伝科
-  - 兵庫医科大学病院アレルギー・リウマチ内科
-  - 川崎医科大学附属病院リウマチ・膠原病科
-  - 九州大学医学部 小児科
-  - 久留米大学医学部 小児科学教室
+  
+  ][
+    - 信州大学医学部附属病院脳神経内科／ #lb リウマチ・膠原病内科
+    - 岐阜大学医学部附属病院小児科
+    - 藤田医科大学病院臨床遺伝科
+    - 兵庫医科大学病院アレルギー・ #lb リウマチ内科
+    - 川崎医科大学附属病院リウマチ・ #lb 膠原病科
+    - 九州大学医学部 小児科
+    - 久留米大学医学部 小児科学教室
+  ]
+   
 
 #refs[https://genetics.qlife.jp/diseases/familial-mediterranean-fever]
 
@@ -268,6 +285,15 @@
 
   ]
 
+  #polylux-slide[
+  = Take home message
+
+  - 若年女性の繰り返す発熱と腹痛はFMFを疑う
+  - 診断は臨床第一、コルヒチンの診断的治療をためらわない！
+    - 家族歴がなくても良い！
+    - 遺伝子異常がなくても良い！
+
+  ]
 
 
 
