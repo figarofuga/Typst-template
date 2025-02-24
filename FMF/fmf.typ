@@ -71,7 +71,7 @@
   
   - 自然免疫による自己炎症性疾患の1つ
   - 成人発症でも良い数少ない疾患(それ以外だとPPFAくらい)
-  - 家族性地中海熱は常染色体劣性（潜性）遺伝形式で遺伝
+  - 家族性地中海熱は*常染色体劣性（潜性）遺伝形式*で遺伝
   - *自己炎症性疾患* vs. #strike[自己免疫疾患]
   ]
 
@@ -92,7 +92,8 @@
 
   #figure(image("figures/jikoensho_jikomenneki.jpeg", height: 50%))
 
-  - 自己炎症 vs. 自己免疫
+  - 自己炎症 vs. 自己免疫で大きく分かれる
+    - 自己免疫はリンパ球に、自己炎症は好中球によって生じる
 
 ]
 
@@ -100,15 +101,15 @@
   = 自己免疫疾患と自己炎症性疾患
 
 
-  #side-by-side(gutter: 0mm, columns: (1fr, 1fr))[
+  #side-by-side(gutter: 0mm, columns: (1.2fr, 1fr))[
     - 自己免疫も自己炎症もスペクトラム
   - 境界領域の疾患が存在する
-    - 簡単にいうとコルヒチンが効く疾患は全部自己炎症より
-    + 再発性心外膜炎
-    + 成人Still病
-    + ベーチェット病
-    + SpA
-    + 壊疽性膿皮症
+    - 簡単にいうとコルヒチンが効く疾患は全部自己炎症寄り
+      + 再発性心外膜炎
+      + 成人Still病
+      + ベーチェット病
+      + SpA
+      + 壊疽性膿皮症
   ][
      #figure(image("figures/jikoensho_spect.jpeg", height: 50%))
   ] 
@@ -137,7 +138,7 @@
   - ある程度決まった間隔(4週間が最多だが個人差あり)での発作
     - ストレスや感染症、月経などに影響される。期間の長さは個人差がある
   - 発熱以外に複数の症状がある
-    + 腹痛
+    + *腹痛*
     + 関節炎
     + 胸膜炎
     + 筋痛
@@ -240,6 +241,12 @@
 
   ]
 
+  #polylux-slide[
+  = FMFの診断～プラクティカルアプローチ
+  
+  #figure(image("figures/fmf_flowchart.png", height: 90%))
+
+  ]
 
   #polylux-slide[
   = 遺伝子検査の方法
@@ -268,12 +275,6 @@
 
   ]
 
-    #polylux-slide[
-  = FMFの診断～プラクティカルアプローチ
-  
-  #figure(image("figures/fmf_flowchart.png", height: 90%))
-
-  ]
 
 
   #polylux-slide[
